@@ -1,0 +1,1295 @@
+[2023-07-05 08:58:02][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 08:58:02][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 08:58:02][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 08:58:02][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 08:58:02][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 08:58:02][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 08:58:02][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 08:58:02][PooledDataSource] [434] [DEBUG] Created connection 387535996. 
+[2023-07-05 08:58:02][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@1719547c] 
+[2023-07-05 08:58:02][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 08:58:02][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 08:58:03][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 08:58:03][getAllBoard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 2023-07-04 20:44:20 
+[2023-07-05 08:58:03][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 08:58:03][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 08:58:03][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 08:58:03][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 08:58:03][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 08:58:03][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 08:58:03][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 08:58:03][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 08:58:03][getAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-05 08:58:06][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 08:58:06][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 08:58:06][PooledDataSource] [434] [DEBUG] Created connection 1911009442. 
+[2023-07-05 08:58:06][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@71e7b0a2] 
+[2023-07-05 08:58:06][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 08:58:06][getOneboard] [137] [DEBUG] ==> Parameters: 네모글(String) 
+[2023-07-05 08:58:06][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 08:58:06][getOneboard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 네모네모합니다, 2023-07-04 16:13:14 
+[2023-07-05 08:58:06][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:00:33][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 09:00:33][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:00:33][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:00:33][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:00:33][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:00:33][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:00:33][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:00:34][PooledDataSource] [434] [DEBUG] Created connection 1650059873. 
+[2023-07-05 09:00:34][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6259ea61] 
+[2023-07-05 09:00:34][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:00:34][getOneboard] [137] [DEBUG] ==> Parameters: 네모글(String) 
+[2023-07-05 09:00:34][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:00:34][getOneboard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 네모네모합니다, 2023-07-04 16:13:14 
+[2023-07-05 09:00:34][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:00:36][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:00:36][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:00:36][PooledDataSource] [434] [DEBUG] Created connection 2040936718. 
+[2023-07-05 09:00:36][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@79a6390e] 
+[2023-07-05 09:00:36][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:00:36][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:00:36][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:00:36][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:00:36][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:01:36][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:01:36][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:01:36][PooledDataSource] [434] [DEBUG] Created connection 1264088425. 
+[2023-07-05 09:01:36][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4b587569] 
+[2023-07-05 09:01:36][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:01:36][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:01:36][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:01:36][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:01:36][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:02:41][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 09:02:41][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:02:41][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:02:41][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:02:41][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:02:41][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:02:41][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:02:41][PooledDataSource] [434] [DEBUG] Created connection 1352847623. 
+[2023-07-05 09:02:41][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@50a2d107] 
+[2023-07-05 09:02:41][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:02:41][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:02:41][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:02:41][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:02:41][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:02:45][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:02:45][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:02:45][PooledDataSource] [434] [DEBUG] Created connection 2017940550. 
+[2023-07-05 09:02:45][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@78475446] 
+[2023-07-05 09:02:45][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:02:45][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:02:45][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:02:45][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:02:45][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:02:46][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:02:46][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:02:46][PooledDataSource] [434] [DEBUG] Created connection 246365467. 
+[2023-07-05 09:02:46][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@eaf3d1b] 
+[2023-07-05 09:02:46][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:02:46][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:02:46][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:02:46][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:02:46][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:04:53][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:04:53][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:04:53][PooledDataSource] [434] [DEBUG] Created connection 1264088425. 
+[2023-07-05 09:04:53][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4b587569] 
+[2023-07-05 09:04:53][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:04:53][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:04:53][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:04:53][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:04:53][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:05:42][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:05:42][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:05:42][PooledDataSource] [434] [DEBUG] Created connection 1155941819. 
+[2023-07-05 09:05:42][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@44e645bb] 
+[2023-07-05 09:05:42][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:05:42][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:05:42][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:05:42][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:05:42][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:06:00][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:06:00][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:06:00][PooledDataSource] [434] [DEBUG] Created connection 1569155916. 
+[2023-07-05 09:06:00][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@5d876b4c] 
+[2023-07-05 09:06:00][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:06:00][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:06:00][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:06:00][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:06:00][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:06:01][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:06:01][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:06:01][PooledDataSource] [434] [DEBUG] Created connection 136870940. 
+[2023-07-05 09:06:01][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@8287c1c] 
+[2023-07-05 09:06:01][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:06:01][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:06:01][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:06:01][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:06:01][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:08:05][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 09:08:05][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:08:05][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:08:05][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:08:05][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:08:05][BoardDAOImpl] [46] [INFO] setDeleteBoard 실행 
+[2023-07-05 09:08:05][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:08:06][PooledDataSource] [434] [DEBUG] Created connection 1167748156. 
+[2023-07-05 09:08:06][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@459a6c3c] 
+[2023-07-05 09:08:06][setDeleteBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET DELFLAG='Y' WHERE SEQ=? 
+[2023-07-05 09:08:06][setDeleteBoard] [137] [DEBUG] ==> Parameters: 10(String) 
+[2023-07-05 09:08:06][setDeleteBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 09:08:11][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 09:08:11][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:08:11][PooledDataSource] [434] [DEBUG] Created connection 598281155. 
+[2023-07-05 09:08:11][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@23a90bc3] 
+[2023-07-05 09:08:11][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 09:08:11][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 09:08:11][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 09:08:11][getAllBoard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 2023-07-04 20:44:20 
+[2023-07-05 09:08:11][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 09:08:11][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 09:08:11][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 09:08:11][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 09:08:11][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 09:08:11][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 09:08:11][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 09:08:11][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 09:08:11][getAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-05 09:08:12][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:08:12][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:08:12][PooledDataSource] [434] [DEBUG] Created connection 406371014. 
+[2023-07-05 09:08:12][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@1838bac6] 
+[2023-07-05 09:08:12][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:08:12][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:08:12][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:08:12][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:08:12][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:08:14][BoardDAOImpl] [46] [INFO] setDeleteBoard 실행 
+[2023-07-05 09:08:14][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:08:14][PooledDataSource] [434] [DEBUG] Created connection 1119228542. 
+[2023-07-05 09:08:14][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@42b6127e] 
+[2023-07-05 09:08:14][setDeleteBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET DELFLAG='Y' WHERE SEQ=? 
+[2023-07-05 09:08:14][setDeleteBoard] [137] [DEBUG] ==> Parameters: 10(String) 
+[2023-07-05 09:08:24][BoardDAOImpl] [46] [INFO] setDeleteBoard 실행 
+[2023-07-05 09:08:24][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:08:24][PooledDataSource] [434] [DEBUG] Created connection 717458205. 
+[2023-07-05 09:08:24][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@2ac38b1d] 
+[2023-07-05 09:08:24][setDeleteBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET DELFLAG='Y' WHERE SEQ=? 
+[2023-07-05 09:08:24][setDeleteBoard] [137] [DEBUG] ==> Parameters: 10(String) 
+[2023-07-05 09:08:30][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 09:08:30][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:08:30][PooledDataSource] [434] [DEBUG] Created connection 1414407521. 
+[2023-07-05 09:08:30][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@544e2561] 
+[2023-07-05 09:08:30][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 09:08:30][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 09:08:30][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 09:08:30][getAllBoard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 2023-07-04 20:44:20 
+[2023-07-05 09:08:30][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 09:08:30][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 09:08:30][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 09:08:30][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 09:08:30][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 09:08:30][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 09:08:30][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 09:08:30][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 09:08:30][getAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-05 09:08:34][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 09:08:34][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:08:34][PooledDataSource] [434] [DEBUG] Created connection 1231026092. 
+[2023-07-05 09:08:34][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@495ff7ac] 
+[2023-07-05 09:08:34][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 09:08:34][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 09:08:34][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 09:08:34][getAllBoard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 2023-07-04 20:44:20 
+[2023-07-05 09:08:34][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 09:08:34][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 09:08:34][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 09:08:34][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 09:08:34][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 09:08:34][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 09:08:34][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 09:08:34][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 09:08:34][getAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-05 09:08:35][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:08:35][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:08:35][PooledDataSource] [434] [DEBUG] Created connection 1130824772. 
+[2023-07-05 09:08:35][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@43670444] 
+[2023-07-05 09:08:35][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:08:35][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:08:35][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:08:35][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:08:35][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:08:35][BoardDAOImpl] [46] [INFO] setDeleteBoard 실행 
+[2023-07-05 09:08:35][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:08:35][PooledDataSource] [434] [DEBUG] Created connection 1790287230. 
+[2023-07-05 09:08:35][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6ab59d7e] 
+[2023-07-05 09:08:35][setDeleteBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET DELFLAG='Y' WHERE SEQ=? 
+[2023-07-05 09:08:35][setDeleteBoard] [137] [DEBUG] ==> Parameters: 10(String) 
+[2023-07-05 09:09:07][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:09:07][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:09:07][PooledDataSource] [434] [DEBUG] Created connection 333864005. 
+[2023-07-05 09:09:07][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@13e65c45] 
+[2023-07-05 09:09:07][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:09:07][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:09:07][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:09:07][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:09:07][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:09:11][BoardDAOImpl] [46] [INFO] setDeleteBoard 실행 
+[2023-07-05 09:09:11][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:09:11][setDeleteBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 09:09:11][PooledDataSource] [466] [DEBUG] Claimed overdue connection 1167748156. 
+[2023-07-05 09:09:11][setDeleteBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET DELFLAG='Y' WHERE SEQ=? 
+[2023-07-05 09:09:11][setDeleteBoard] [137] [DEBUG] ==> Parameters: 10(String) 
+[2023-07-05 09:09:40][BoardDAOImpl] [46] [INFO] setDeleteBoard 실행 
+[2023-07-05 09:09:40][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:09:40][PooledDataSource] [466] [DEBUG] Claimed overdue connection 598281155. 
+[2023-07-05 09:09:40][setDeleteBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET DELFLAG='Y' WHERE SEQ=? 
+[2023-07-05 09:09:40][setDeleteBoard] [137] [DEBUG] ==> Parameters: 10(String) 
+[2023-07-05 09:11:27][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 09:11:27][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:11:27][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:11:27][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:11:27][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:11:27][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:11:27][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:11:28][PooledDataSource] [434] [DEBUG] Created connection 818189786. 
+[2023-07-05 09:11:28][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@30c495da] 
+[2023-07-05 09:11:28][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:11:28][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:11:28][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:11:28][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:11:28][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:11:29][BoardDAOImpl] [46] [INFO] setDeleteBoard 실행 
+[2023-07-05 09:11:29][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:11:29][PooledDataSource] [434] [DEBUG] Created connection 32744937. 
+[2023-07-05 09:11:29][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@1f3a5e9] 
+[2023-07-05 09:11:29][setDeleteBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET DELFLAG='Y' WHERE SEQ=? 
+[2023-07-05 09:11:29][setDeleteBoard] [137] [DEBUG] ==> Parameters: 10(String) 
+[2023-07-05 09:13:25][BoardDAOImpl] [46] [INFO] setDeleteBoard 실행 
+[2023-07-05 09:13:25][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:13:25][PooledDataSource] [434] [DEBUG] Created connection 1993062115. 
+[2023-07-05 09:13:25][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@76cbb6e3] 
+[2023-07-05 09:13:25][setDeleteBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET DELFLAG='Y' WHERE SEQ=? 
+[2023-07-05 09:13:25][setDeleteBoard] [137] [DEBUG] ==> Parameters: 10(String) 
+[2023-07-05 09:14:06][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 09:14:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:14:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:14:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:14:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:14:06][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:14:06][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:14:06][PooledDataSource] [434] [DEBUG] Created connection 595052391. 
+[2023-07-05 09:14:06][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@2377c767] 
+[2023-07-05 09:14:06][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:14:06][getOneboard] [137] [DEBUG] ==> Parameters: 제발123(String) 
+[2023-07-05 09:14:07][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:14:07][getOneboard] [143] [TRACE] <==        Row: 10, 제발123, 제발123, 제발바랍123, 2023-07-04 20:44:20 
+[2023-07-05 09:14:07][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:14:08][BoardDAOImpl] [46] [INFO] setDeleteBoard 실행 
+[2023-07-05 09:14:08][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:14:08][PooledDataSource] [434] [DEBUG] Created connection 741099484. 
+[2023-07-05 09:14:08][setDeleteBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET DELFLAG='Y' WHERE SEQ=? 
+[2023-07-05 09:14:08][setDeleteBoard] [137] [DEBUG] ==> Parameters: 10(String) 
+[2023-07-05 09:14:08][setDeleteBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 09:14:11][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 09:14:11][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:14:11][PooledDataSource] [434] [DEBUG] Created connection 892013243. 
+[2023-07-05 09:14:11][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@352b0abb] 
+[2023-07-05 09:14:11][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 09:14:11][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 09:14:11][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 09:14:11][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 09:14:11][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 09:14:11][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 09:14:11][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 09:14:11][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 09:14:11][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 09:14:11][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 09:14:11][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 09:14:11][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 09:22:08][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 09:22:08][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:22:08][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:22:08][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:22:08][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:22:08][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 09:22:08][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:22:08][PooledDataSource] [434] [DEBUG] Created connection 603657367. 
+[2023-07-05 09:22:08][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@23fb1497] 
+[2023-07-05 09:22:08][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 09:22:09][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 09:22:09][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 09:22:09][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 09:22:09][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 09:22:09][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 09:22:09][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 09:22:09][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 09:22:09][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 09:22:09][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 09:22:09][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 09:22:09][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 09:22:13][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:22:13][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:22:13][PooledDataSource] [434] [DEBUG] Created connection 1698140287. 
+[2023-07-05 09:22:13][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6537907f] 
+[2023-07-05 09:22:13][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:22:13][getOneboard] [137] [DEBUG] ==> Parameters: 냠ㄴ먄먄(String) 
+[2023-07-05 09:22:13][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:22:13][getOneboard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 냐먀냔먐ㄴ, 2023-07-04 20:39:37 
+[2023-07-05 09:22:13][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:22:15][BoardDAOImpl] [46] [INFO] setDeleteBoard 실행 
+[2023-07-05 09:22:15][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:22:15][PooledDataSource] [434] [DEBUG] Created connection 1264088425. 
+[2023-07-05 09:22:15][setDeleteBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET DELFLAG='Y' WHERE SEQ=? 
+[2023-07-05 09:23:06][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 09:23:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:23:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:23:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:23:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:23:06][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:23:06][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:23:06][PooledDataSource] [434] [DEBUG] Created connection 1453314610. 
+[2023-07-05 09:23:06][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@569fd232] 
+[2023-07-05 09:23:06][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:23:06][getOneboard] [137] [DEBUG] ==> Parameters: 냠ㄴ먄먄(String) 
+[2023-07-05 09:23:07][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:23:07][getOneboard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 냐먀냔먐ㄴ, 2023-07-04 20:39:37 
+[2023-07-05 09:23:07][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:24:28][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 09:24:28][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:24:28][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:24:28][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:24:28][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:24:28][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:24:28][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:24:28][PooledDataSource] [434] [DEBUG] Created connection 74736091. 
+[2023-07-05 09:24:28][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@47461db] 
+[2023-07-05 09:24:28][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:24:28][getOneboard] [137] [DEBUG] ==> Parameters: 냠ㄴ먄먄(String) 
+[2023-07-05 09:24:28][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:24:28][getOneboard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 냐먀냔먐ㄴ, 2023-07-04 20:39:37 
+[2023-07-05 09:24:28][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:25:15][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:25:15][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:25:15][PooledDataSource] [434] [DEBUG] Created connection 1037689086. 
+[2023-07-05 09:25:15][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3dd9e0fe] 
+[2023-07-05 09:25:15][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:25:15][getOneboard] [137] [DEBUG] ==> Parameters: 냠ㄴ먄먄(String) 
+[2023-07-05 09:25:15][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:25:15][getOneboard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 냐먀냔먐ㄴ, 2023-07-04 20:39:37 
+[2023-07-05 09:25:15][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:25:57][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 09:25:57][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:25:57][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:25:57][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:25:57][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:25:57][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:25:57][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:25:57][PooledDataSource] [434] [DEBUG] Created connection 1294686408. 
+[2023-07-05 09:25:57][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4d2b58c8] 
+[2023-07-05 09:25:57][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:25:58][getOneboard] [137] [DEBUG] ==> Parameters: 냠ㄴ먄먄(String) 
+[2023-07-05 09:25:58][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:25:58][getOneboard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 냐먀냔먐ㄴ, 2023-07-04 20:39:37 
+[2023-07-05 09:25:58][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:30:52][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 09:30:52][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:30:52][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:30:52][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:30:52][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:30:52][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:30:52][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:30:53][PooledDataSource] [434] [DEBUG] Created connection 1294686408. 
+[2023-07-05 09:30:53][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4d2b58c8] 
+[2023-07-05 09:30:53][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:30:53][getOneboard] [137] [DEBUG] ==> Parameters: 냠ㄴ먄먄(String) 
+[2023-07-05 09:30:53][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:30:53][getOneboard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 냐먀냔먐ㄴ, 2023-07-04 20:39:37 
+[2023-07-05 09:30:53][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:39:51][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 09:39:51][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:39:51][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:39:51][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:39:51][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:40:13][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 09:40:13][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:40:13][PooledDataSource] [434] [DEBUG] Created connection 364709099. 
+[2023-07-05 09:40:13][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 09:41:19][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:41:19][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:41:19][PooledDataSource] [434] [DEBUG] Created connection 314172996. 
+[2023-07-05 09:41:19][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@12b9e644] 
+[2023-07-05 09:41:19][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:41:19][getOneboard] [137] [DEBUG] ==> Parameters: 냠ㄴ먄먄(String) 
+[2023-07-05 09:41:19][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:41:19][getOneboard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 냐먀냔먐ㄴ, 2023-07-04 20:39:37 
+[2023-07-05 09:41:19][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:41:21][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 09:41:21][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:41:21][PooledDataSource] [434] [DEBUG] Created connection 1119228542. 
+[2023-07-05 09:41:21][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@42b6127e] 
+[2023-07-05 09:41:21][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 09:41:21][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 09:41:21][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 09:41:21][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 09:41:21][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 09:41:21][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 09:41:21][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 09:41:21][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 09:41:21][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 09:41:21][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 09:41:21][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 09:41:21][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 09:41:22][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 09:41:22][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:41:22][PooledDataSource] [434] [DEBUG] Created connection 1551423992. 
+[2023-07-05 09:41:22][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@5c78d9f8] 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 09:41:22][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 09:41:22][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:41:22][PooledDataSource] [434] [DEBUG] Created connection 1812458820. 
+[2023-07-05 09:41:22][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6c07ed44] 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 09:41:22][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 09:41:22][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:41:22][PooledDataSource] [434] [DEBUG] Created connection 289446918. 
+[2023-07-05 09:41:22][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@11409c06] 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 09:41:22][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 09:41:22][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:41:22][PooledDataSource] [434] [DEBUG] Created connection 223049805. 
+[2023-07-05 09:41:22][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@d4b784d] 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 09:41:22][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 09:41:22][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:41:22][PooledDataSource] [434] [DEBUG] Created connection 18446978. 
+[2023-07-05 09:41:22][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@1197a82] 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 09:41:22][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 09:41:22][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 09:45:03][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 09:45:03][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:45:03][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:45:03][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:45:03][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:45:03][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 09:45:03][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:45:03][PooledDataSource] [434] [DEBUG] Created connection 1103815527. 
+[2023-07-05 09:45:03][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@41cae367] 
+[2023-07-05 09:45:03][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 09:45:03][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 09:45:03][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 09:45:03][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 09:45:03][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 09:45:03][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 09:45:03][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 09:45:03][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 09:45:03][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 09:45:03][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 09:45:03][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 09:45:03][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 09:45:05][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:45:05][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:45:05][PooledDataSource] [434] [DEBUG] Created connection 1000732504. 
+[2023-07-05 09:45:05][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ba5f758] 
+[2023-07-05 09:45:05][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:45:05][getOneboard] [137] [DEBUG] ==> Parameters: 제발(String) 
+[2023-07-05 09:45:05][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:45:05][getOneboard] [143] [TRACE] <==        Row: 9, 제발, 제발, 제발바랍, 2023-07-04 20:42:39 
+[2023-07-05 09:45:05][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:45:08][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 09:45:08][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:45:08][PooledDataSource] [434] [DEBUG] Created connection 32744937. 
+[2023-07-05 09:45:08][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 09:53:54][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 09:53:54][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:53:54][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:53:54][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:53:54][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 09:53:54][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 09:53:54][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:53:54][PooledDataSource] [434] [DEBUG] Created connection 20645666. 
+[2023-07-05 09:53:54][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@13b0722] 
+[2023-07-05 09:53:54][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 09:53:55][getOneboard] [137] [DEBUG] ==> Parameters: 제발(String) 
+[2023-07-05 09:53:55][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 09:53:55][getOneboard] [143] [TRACE] <==        Row: 9, 제발, 제발, 제발바랍, 2023-07-04 20:42:39 
+[2023-07-05 09:53:55][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 09:54:01][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 09:54:01][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 09:54:01][PooledDataSource] [434] [DEBUG] Created connection 2135476918. 
+[2023-07-05 09:54:01][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:01:24][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:01:24][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:01:24][PooledDataSource] [434] [DEBUG] Created connection 1119228542. 
+[2023-07-05 10:01:24][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:01:38][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:01:38][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:01:38][PooledDataSource] [434] [DEBUG] Created connection 289446918. 
+[2023-07-05 10:01:38][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:02:43][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:02:43][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:02:43][PooledDataSource] [434] [DEBUG] Created connection 1812458820. 
+[2023-07-05 10:02:43][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:03:06][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:03:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:03:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:03:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:03:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:03:06][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:03:06][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:03:07][PooledDataSource] [434] [DEBUG] Created connection 777224631. 
+[2023-07-05 10:03:07][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:04:02][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:04:02][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:04:02][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:04:02][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:04:02][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:04:02][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:04:02][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:04:02][PooledDataSource] [434] [DEBUG] Created connection 769567791. 
+[2023-07-05 10:04:02][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:05:05][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:05:05][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:05:05][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:05:05][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:05:05][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:05:12][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:05:12][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:05:12][PooledDataSource] [434] [DEBUG] Created connection 960696627. 
+[2023-07-05 10:05:12][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:05:12][setUpdateBoard] [137] [DEBUG] ==> Parameters: ìì(String), ãë±¡ë±(String), 9(String) 
+[2023-07-05 10:05:12][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:06:03][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:06:03][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:06:03][PooledDataSource] [434] [DEBUG] Created connection 480619456. 
+[2023-07-05 10:06:03][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:06:03][setUpdateBoard] [137] [DEBUG] ==> Parameters: ìì(String), ãë±¡ë±(String), 9(String) 
+[2023-07-05 10:06:03][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:06:07][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:06:07][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:06:07][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:06:07][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:06:07][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:06:11][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:06:11][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:06:11][PooledDataSource] [434] [DEBUG] Created connection 1420009019. 
+[2023-07-05 10:06:11][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@54a39e3b] 
+[2023-07-05 10:06:11][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:06:11][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:06:11][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:06:11][getAllBoard] [143] [TRACE] <==        Row: 9, ìì, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:06:11][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:06:11][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:06:11][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:06:11][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:06:11][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:06:11][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:06:11][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:06:11][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:06:12][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:06:12][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:06:12][PooledDataSource] [434] [DEBUG] Created connection 105952858. 
+[2023-07-05 10:06:12][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@650b65a] 
+[2023-07-05 10:06:12][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:06:12][getOneboard] [137] [DEBUG] ==> Parameters: ìì(String) 
+[2023-07-05 10:06:12][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:06:12][getOneboard] [143] [TRACE] <==        Row: 9, ìì, 제발, ãë±¡ë±, 2023-07-04 20:42:39 
+[2023-07-05 10:06:12][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:06:15][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:06:15][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:06:15][PooledDataSource] [434] [DEBUG] Created connection 1441658943. 
+[2023-07-05 10:06:15][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:06:15][setUpdateBoard] [137] [DEBUG] ==> Parameters: ãã´ããã´ã(String), ãã´ããã´ããã´ã(String), 9(String) 
+[2023-07-05 10:06:15][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:07:11][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:07:11][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:07:11][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:07:11][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:07:11][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:07:11][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:07:11][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:07:11][PooledDataSource] [434] [DEBUG] Created connection 1446894269. 
+[2023-07-05 10:07:11][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@563ddabd] 
+[2023-07-05 10:07:11][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:07:11][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:07:12][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:07:12][getAllBoard] [143] [TRACE] <==        Row: 9, ãã´ããã´ã, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:07:12][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:07:12][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:07:12][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:07:12][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:07:12][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:07:12][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:07:12][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:07:12][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:07:13][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:07:13][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:07:13][PooledDataSource] [434] [DEBUG] Created connection 861814631. 
+[2023-07-05 10:07:13][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@335e3f67] 
+[2023-07-05 10:07:13][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:07:13][getOneboard] [137] [DEBUG] ==> Parameters: ãã´ããã´ã(String) 
+[2023-07-05 10:07:13][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:07:13][getOneboard] [143] [TRACE] <==        Row: 9, ãã´ããã´ã, 제발, ãã´ããã´ããã´ã, 2023-07-04 20:42:39 
+[2023-07-05 10:07:13][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:07:16][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:07:16][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:07:16][PooledDataSource] [434] [DEBUG] Created connection 1572960250. 
+[2023-07-05 10:07:16][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:07:16][setUpdateBoard] [137] [DEBUG] ==> Parameters: ãã´ããã´ã(String), ãã´ããã´ããã´ã(String), 9(String) 
+[2023-07-05 10:07:16][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:07:31][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:07:31][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:07:31][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:07:31][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:07:31][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:07:31][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:07:31][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:07:31][PooledDataSource] [434] [DEBUG] Created connection 1655647883. 
+[2023-07-05 10:07:31][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@62af2e8b] 
+[2023-07-05 10:07:31][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:07:31][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:07:32][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:07:32][getAllBoard] [143] [TRACE] <==        Row: 9, ãã´ããã´ã, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:07:32][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:07:32][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:07:32][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:07:32][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:07:32][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:07:32][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:07:32][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:07:32][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:07:33][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:07:33][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:07:33][PooledDataSource] [434] [DEBUG] Created connection 113196679. 
+[2023-07-05 10:07:33][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6bf3e87] 
+[2023-07-05 10:07:33][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:07:33][getOneboard] [137] [DEBUG] ==> Parameters: ãã´ããã´ã(String) 
+[2023-07-05 10:07:33][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:07:33][getOneboard] [143] [TRACE] <==        Row: 9, ãã´ããã´ã, 제발, ãã´ããã´ããã´ã, 2023-07-04 20:42:39 
+[2023-07-05 10:07:33][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:07:37][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:07:37][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:07:37][PooledDataSource] [434] [DEBUG] Created connection 487452293. 
+[2023-07-05 10:07:37][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:07:37][setUpdateBoard] [137] [DEBUG] ==> Parameters: ãã´ããã´ããã´ã(String), ãã´ããã´ããã´ããã´ã(String), 9(String) 
+[2023-07-05 10:08:09][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:08:09][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:08:09][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:08:09][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:08:09][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:08:09][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:08:09][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:08:09][PooledDataSource] [434] [DEBUG] Created connection 959457704. 
+[2023-07-05 10:08:09][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@393029a8] 
+[2023-07-05 10:08:09][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:08:09][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:08:10][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:08:10][getAllBoard] [143] [TRACE] <==        Row: 9, ãã´ããã´ã, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:08:10][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:08:10][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:08:10][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:08:10][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:08:10][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:08:10][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:08:10][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:08:10][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:08:10][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:08:10][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:08:10][PooledDataSource] [434] [DEBUG] Created connection 549197221. 
+[2023-07-05 10:08:10][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@20bc15a5] 
+[2023-07-05 10:08:10][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:08:10][getOneboard] [137] [DEBUG] ==> Parameters: ãã´ããã´ã(String) 
+[2023-07-05 10:08:10][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:08:10][getOneboard] [143] [TRACE] <==        Row: 9, ãã´ããã´ã, 제발, ãã´ããã´ããã´ã, 2023-07-04 20:42:39 
+[2023-07-05 10:08:10][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:08:17][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:08:17][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:08:17][PooledDataSource] [434] [DEBUG] Created connection 1264299551. 
+[2023-07-05 10:08:17][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:08:17][setUpdateBoard] [137] [DEBUG] ==> Parameters: 냡(String), 냡ㄴ뱝(String), 9(String) 
+[2023-07-05 10:08:17][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:10:19][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:10:19][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:10:19][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:10:19][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:10:19][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:10:20][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:10:20][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:10:20][PooledDataSource] [434] [DEBUG] Created connection 350541264. 
+[2023-07-05 10:10:20][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@14e4d5d0] 
+[2023-07-05 10:10:20][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:10:20][getOneboard] [137] [DEBUG] ==> Parameters: ãã´ããã´ã(String) 
+[2023-07-05 10:10:20][getOneboard] [137] [DEBUG] <==      Total: 0 
+[2023-07-05 10:10:22][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:10:22][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:10:22][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:10:22][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:10:22][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:10:22][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:10:22][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:10:23][PooledDataSource] [434] [DEBUG] Created connection 1561764082. 
+[2023-07-05 10:10:23][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@5d16a0f2] 
+[2023-07-05 10:10:23][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:10:23][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:10:23][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:10:23][getAllBoard] [143] [TRACE] <==        Row: 9, 냡, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:10:23][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:10:23][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:10:23][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:10:23][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:10:23][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:10:23][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:10:23][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:10:23][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:10:24][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:10:24][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:10:24][PooledDataSource] [434] [DEBUG] Created connection 857944105. 
+[2023-07-05 10:10:24][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@33233029] 
+[2023-07-05 10:10:24][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:10:24][getOneboard] [137] [DEBUG] ==> Parameters: 냡(String) 
+[2023-07-05 10:10:24][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:10:24][getOneboard] [143] [TRACE] <==        Row: 9, 냡, 제발, 냡ㄴ뱝, 2023-07-04 20:42:39 
+[2023-07-05 10:10:24][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:10:30][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:10:30][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:10:30][PooledDataSource] [434] [DEBUG] Created connection 133348857. 
+[2023-07-05 10:10:30][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:10:30][setUpdateBoard] [137] [DEBUG] ==> Parameters: 제발(String), 제벨(String), 9(String) 
+[2023-07-05 10:10:30][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:11:03][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:11:03][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:11:03][PooledDataSource] [434] [DEBUG] Created connection 1723041664. 
+[2023-07-05 10:11:03][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@66b38780] 
+[2023-07-05 10:11:03][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:11:03][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:11:03][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:11:03][getAllBoard] [143] [TRACE] <==        Row: 9, 제발, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:11:03][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:11:03][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:11:03][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:11:03][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:11:03][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:11:03][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:11:03][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:11:03][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:11:05][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:11:05][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:11:05][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:11:05][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:11:05][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:11:05][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:11:05][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:11:05][PooledDataSource] [434] [DEBUG] Created connection 1495199166. 
+[2023-07-05 10:11:05][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@591eedbe] 
+[2023-07-05 10:11:05][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:11:05][getOneboard] [137] [DEBUG] ==> Parameters: 제발(String) 
+[2023-07-05 10:11:05][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:11:05][getOneboard] [143] [TRACE] <==        Row: 9, 제발, 제발, 제벨, 2023-07-04 20:42:39 
+[2023-07-05 10:11:05][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:11:08][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:11:08][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:11:08][PooledDataSource] [434] [DEBUG] Created connection 1849460840. 
+[2023-07-05 10:11:08][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:11:08][setUpdateBoard] [137] [DEBUG] ==> Parameters: 1234(String), 12341234(String), 9(String) 
+[2023-07-05 10:11:08][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:11:08][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:11:08][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:11:08][PooledDataSource] [434] [DEBUG] Created connection 2104110220. 
+[2023-07-05 10:11:08][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@7d6a2c8c] 
+[2023-07-05 10:11:08][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:11:08][getOneboard] [137] [DEBUG] ==> Parameters: 1234(String) 
+[2023-07-05 10:11:08][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:11:08][getOneboard] [143] [TRACE] <==        Row: 9, 1234, 제발, 12341234, 2023-07-04 20:42:39 
+[2023-07-05 10:11:08][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:11:15][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:11:15][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:11:15][PooledDataSource] [434] [DEBUG] Created connection 885896774. 
+[2023-07-05 10:11:15][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:11:15][setUpdateBoard] [137] [DEBUG] ==> Parameters: 바(String), 보(String), 9(String) 
+[2023-07-05 10:11:15][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:12:57][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:12:57][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:12:57][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:12:57][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:12:57][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:12:57][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:12:57][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:12:58][PooledDataSource] [434] [DEBUG] Created connection 603657367. 
+[2023-07-05 10:12:58][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@23fb1497] 
+[2023-07-05 10:12:58][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:12:58][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:12:58][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:12:58][getAllBoard] [143] [TRACE] <==        Row: 9, 바, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:12:58][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:12:58][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:12:58][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:12:58][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:12:58][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:12:58][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:12:58][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:12:58][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:12:59][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:12:59][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:12:59][PooledDataSource] [434] [DEBUG] Created connection 1332209882. 
+[2023-07-05 10:12:59][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4f67e8da] 
+[2023-07-05 10:12:59][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:12:59][getOneboard] [137] [DEBUG] ==> Parameters: 바(String) 
+[2023-07-05 10:12:59][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:12:59][getOneboard] [143] [TRACE] <==        Row: 9, 바, 제발, 보, 2023-07-04 20:42:39 
+[2023-07-05 10:12:59][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:13:05][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:13:05][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:13:05][PooledDataSource] [434] [DEBUG] Created connection 32744937. 
+[2023-07-05 10:13:05][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:13:05][setUpdateBoard] [137] [DEBUG] ==> Parameters: 냠(String), 냠ㄴ먐ㄴ냠(String), 9(String) 
+[2023-07-05 10:13:05][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:20:27][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:20:27][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:20:27][PooledDataSource] [434] [DEBUG] Created connection 1812458820. 
+[2023-07-05 10:20:27][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6c07ed44] 
+[2023-07-05 10:20:27][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:20:27][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:20:27][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:20:27][getAllBoard] [143] [TRACE] <==        Row: 9, 냠, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:20:27][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:20:27][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:20:27][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:20:27][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:20:27][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:20:27][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:20:27][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:20:27][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:20:28][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:20:28][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:20:28][PooledDataSource] [434] [DEBUG] Created connection 289446918. 
+[2023-07-05 10:20:28][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@11409c06] 
+[2023-07-05 10:20:28][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:20:28][getOneboard] [137] [DEBUG] ==> Parameters: 냠(String) 
+[2023-07-05 10:20:28][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:20:28][getOneboard] [143] [TRACE] <==        Row: 9, 냠, 제발, 냠ㄴ먐ㄴ냠, 2023-07-04 20:42:39 
+[2023-07-05 10:20:28][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:21:47][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:21:47][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:21:47][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:21:47][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:21:47][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:22:56][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:22:56][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:22:57][PooledDataSource] [434] [DEBUG] Created connection 1899149400. 
+[2023-07-05 10:22:57][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:22:57][setUpdateBoard] [137] [DEBUG] ==> Parameters: ㅁㄴㅇㅁㄴㅇ(String), ㅁㄴㅇㅁㄴㅇㅁㄴㅇ(String), 9(String) 
+[2023-07-05 10:22:57][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:23:13][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:23:13][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:23:13][PooledDataSource] [434] [DEBUG] Created connection 289446918. 
+[2023-07-05 10:23:13][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:23:13][setUpdateBoard] [137] [DEBUG] ==> Parameters: ㅁㄴㅇㅁㄴㅇ(String), ㅁㄴㅇㅁㄴㅇㅁㄴㅇ(String), 9(String) 
+[2023-07-05 10:23:13][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:23:21][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:23:21][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:23:21][PooledDataSource] [434] [DEBUG] Created connection 1901368591. 
+[2023-07-05 10:23:21][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@7154950f] 
+[2023-07-05 10:23:21][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:23:21][getOneboard] [137] [DEBUG] ==> Parameters: 냠(String) 
+[2023-07-05 10:23:21][getOneboard] [137] [DEBUG] <==      Total: 0 
+[2023-07-05 10:23:25][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:23:25][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:23:25][PooledDataSource] [434] [DEBUG] Created connection 7361333. 
+[2023-07-05 10:23:25][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@705335] 
+[2023-07-05 10:23:25][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:23:25][getOneboard] [137] [DEBUG] ==> Parameters: 냠ㄴ먄먄(String) 
+[2023-07-05 10:23:25][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:23:25][getOneboard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 냐먀냔먐ㄴ, 2023-07-04 20:39:37 
+[2023-07-05 10:23:25][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:23:28][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:23:28][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:23:28][PooledDataSource] [434] [DEBUG] Created connection 505182287. 
+[2023-07-05 10:23:28][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@1e1c784f] 
+[2023-07-05 10:23:28][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:23:28][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:23:28][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:23:28][getAllBoard] [143] [TRACE] <==        Row: 9, ㅁㄴㅇㅁㄴㅇ, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:23:28][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:23:28][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:23:28][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:23:28][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:23:28][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:23:28][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:23:28][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:23:28][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:23:28][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:23:28][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:23:28][PooledDataSource] [434] [DEBUG] Created connection 317464151. 
+[2023-07-05 10:23:28][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@12ec1e57] 
+[2023-07-05 10:23:28][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:23:28][getOneboard] [137] [DEBUG] ==> Parameters: ㅁㄴㅇㅁㄴㅇ(String) 
+[2023-07-05 10:23:28][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:23:28][getOneboard] [143] [TRACE] <==        Row: 9, ㅁㄴㅇㅁㄴㅇ, 제발, ㅁㄴㅇㅁㄴㅇㅁㄴㅇ, 2023-07-04 20:42:39 
+[2023-07-05 10:23:28][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:23:32][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:23:32][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:23:32][PooledDataSource] [434] [DEBUG] Created connection 32744937. 
+[2023-07-05 10:23:32][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:23:32][setUpdateBoard] [137] [DEBUG] ==> Parameters: 1234(String), 12341234(String), 9(String) 
+[2023-07-05 10:23:32][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:23:32][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:23:32][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:23:32][PooledDataSource] [434] [DEBUG] Created connection 127236831. 
+[2023-07-05 10:23:32][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@7957adf] 
+[2023-07-05 10:23:32][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE TITLE = ? 
+[2023-07-05 10:23:32][getOneboard] [137] [DEBUG] ==> Parameters: 1234(String) 
+[2023-07-05 10:23:32][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:23:32][getOneboard] [143] [TRACE] <==        Row: 9, 1234, 제발, 12341234, 2023-07-04 20:42:39 
+[2023-07-05 10:23:32][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:27:44][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:27:44][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:27:44][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:27:44][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:27:44][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:27:44][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:27:44][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:27:45][PooledDataSource] [434] [DEBUG] Created connection 52649625. 
+[2023-07-05 10:27:45][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3235e99] 
+[2023-07-05 10:27:45][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE SEQ = ? 
+[2023-07-05 10:27:48][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:27:48][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:27:48][PooledDataSource] [434] [DEBUG] Created connection 1211647297. 
+[2023-07-05 10:27:48][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@48384541] 
+[2023-07-05 10:27:48][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:27:48][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:27:48][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:27:48][getAllBoard] [143] [TRACE] <==        Row: 9, 1234, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:27:48][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:27:48][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:27:48][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:27:48][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:27:48][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:27:48][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:27:48][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:27:48][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:27:49][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:27:49][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:27:49][PooledDataSource] [434] [DEBUG] Created connection 1911497949. 
+[2023-07-05 10:27:49][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@71ef24dd] 
+[2023-07-05 10:27:49][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE SEQ = ? 
+[2023-07-05 10:28:19][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:28:19][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:28:19][PooledDataSource] [434] [DEBUG] Created connection 207630186. 
+[2023-07-05 10:28:19][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@c602f6a] 
+[2023-07-05 10:28:19][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE SEQ = ? 
+[2023-07-05 10:28:20][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:28:20][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:28:20][PooledDataSource] [434] [DEBUG] Created connection 1970129266. 
+[2023-07-05 10:28:20][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@756dc972] 
+[2023-07-05 10:28:20][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:28:20][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:28:20][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:28:20][getAllBoard] [143] [TRACE] <==        Row: 9, 1234, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:28:20][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:28:20][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:28:20][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:28:20][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:28:20][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:28:20][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:28:20][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:28:20][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:28:21][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:28:21][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:28:21][PooledDataSource] [434] [DEBUG] Created connection 1698648921. 
+[2023-07-05 10:28:21][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@653f5359] 
+[2023-07-05 10:28:21][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:28:21][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:28:21][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:28:21][getAllBoard] [143] [TRACE] <==        Row: 9, 1234, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:28:21][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:28:21][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:28:21][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:28:21][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:28:21][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:28:21][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:28:21][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:28:21][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:28:22][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:28:22][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:28:22][PooledDataSource] [434] [DEBUG] Created connection 1798046905. 
+[2023-07-05 10:28:22][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6b2c04b9] 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 9, 1234, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:28:22][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:28:22][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:28:22][PooledDataSource] [434] [DEBUG] Created connection 2047124691. 
+[2023-07-05 10:28:22][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@7a04a4d3] 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 9, 1234, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:28:22][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:28:22][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:28:22][PooledDataSource] [434] [DEBUG] Created connection 406371014. 
+[2023-07-05 10:28:22][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@1838bac6] 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 9, 1234, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:28:22][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:28:22][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:28:22][PooledDataSource] [434] [DEBUG] Created connection 1837429270. 
+[2023-07-05 10:28:22][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6d84f216] 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 9, 1234, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:28:22][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:28:22][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:28:22][PooledDataSource] [466] [DEBUG] Claimed overdue connection 52649625. 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 9, 1234, 제발, 2023-07-04 20:42:39 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:28:22][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:28:22][getAllBoard] [137] [DEBUG] <==      Total: 8 
+[2023-07-05 10:28:28][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:28:28][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:28:28][PooledDataSource] [466] [DEBUG] Claimed overdue connection 1211647297. 
+[2023-07-05 10:28:28][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE SEQ = ? 
+[2023-07-05 10:28:28][getOneboard] [137] [DEBUG] ==> Parameters: 9(String) 
+[2023-07-05 10:28:28][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:28:28][getOneboard] [143] [TRACE] <==        Row: 9, 1234, 제발, 12341234, 2023-07-04 20:42:39 
+[2023-07-05 10:28:28][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:28:34][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:28:34][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:28:34][PooledDataSource] [466] [DEBUG] Claimed overdue connection 1911497949. 
+[2023-07-05 10:28:34][JdbcTransaction] [101] [DEBUG] Setting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@71ef24dd] 
+[2023-07-05 10:28:34][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:28:34][setUpdateBoard] [137] [DEBUG] ==> Parameters: ㅁㄴㅇ(String), ㅁㄴㅇㅁㄴㅇ(String), 9(String) 
+[2023-07-05 10:28:34][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:28:34][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:28:34][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:28:34][PooledDataSource] [476] [DEBUG] Waiting as long as 20000 milliseconds for connection. 
+[2023-07-05 10:28:54][PooledDataSource] [466] [DEBUG] Claimed overdue connection 207630186. 
+[2023-07-05 10:28:54][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE SEQ = ? 
+[2023-07-05 10:28:54][getOneboard] [137] [DEBUG] ==> Parameters: 9(String) 
+[2023-07-05 10:28:54][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:28:54][getOneboard] [143] [TRACE] <==        Row: 9, ㅁㄴㅇ, 제발, ㅁㄴㅇㅁㄴㅇ, 2023-07-04 20:42:39 
+[2023-07-05 10:28:54][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:29:03][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:29:03][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:29:03][PooledDataSource] [466] [DEBUG] Claimed overdue connection 1970129266. 
+[2023-07-05 10:29:03][JdbcTransaction] [101] [DEBUG] Setting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@756dc972] 
+[2023-07-05 10:29:03][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:29:03][setUpdateBoard] [137] [DEBUG] ==> Parameters: ㅁㄴㅇㅁㄴㅇㅁㄴㅇ(String), ㅁㄴㅇㅁㄴㅇㅁㄴㅇ(String), 9(String) 
+[2023-07-05 10:29:03][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:29:03][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:29:03][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:29:03][PooledDataSource] [466] [DEBUG] Claimed overdue connection 1698648921. 
+[2023-07-05 10:29:03][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE SEQ = ? 
+[2023-07-05 10:29:03][getOneboard] [137] [DEBUG] ==> Parameters: 9(String) 
+[2023-07-05 10:29:03][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:29:03][getOneboard] [143] [TRACE] <==        Row: 9, ㅁㄴㅇㅁㄴㅇㅁㄴㅇ, 제발, ㅁㄴㅇㅁㄴㅇㅁㄴㅇ, 2023-07-04 20:42:39 
+[2023-07-05 10:29:03][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:31:06][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-05 10:31:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:31:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:31:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:31:06][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-05 10:31:06][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:31:06][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:31:06][PooledDataSource] [434] [DEBUG] Created connection 527559154. 
+[2023-07-05 10:31:06][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@1f71e9f2] 
+[2023-07-05 10:31:06][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE SEQ = ? 
+[2023-07-05 10:31:06][getOneboard] [137] [DEBUG] ==> Parameters: 9(String) 
+[2023-07-05 10:31:06][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:31:06][getOneboard] [143] [TRACE] <==        Row: 9, ㅁㄴㅇㅁㄴㅇㅁㄴㅇ, 제발, ㅁㄴㅇㅁㄴㅇㅁㄴㅇ, 2023-07-04 20:42:39 
+[2023-07-05 10:31:06][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:31:07][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:31:07][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:31:07][PooledDataSource] [434] [DEBUG] Created connection 1197397397. 
+[2023-07-05 10:31:07][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@475ed595] 
+[2023-07-05 10:31:07][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE SEQ = ? 
+[2023-07-05 10:31:07][getOneboard] [137] [DEBUG] ==> Parameters: 9(String) 
+[2023-07-05 10:31:07][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:31:07][getOneboard] [143] [TRACE] <==        Row: 9, ㅁㄴㅇㅁㄴㅇㅁㄴㅇ, 제발, ㅁㄴㅇㅁㄴㅇㅁㄴㅇ, 2023-07-04 20:42:39 
+[2023-07-05 10:31:07][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:31:11][BoardDAOImpl] [46] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:31:11][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:31:11][PooledDataSource] [434] [DEBUG] Created connection 1077502685. 
+[2023-07-05 10:31:11][setDeleteBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET DELFLAG='Y' WHERE SEQ=? 
+[2023-07-05 10:31:11][setDeleteBoard] [137] [DEBUG] ==> Parameters: 9(String) 
+[2023-07-05 10:31:11][setDeleteBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:31:13][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:31:13][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:31:13][PooledDataSource] [434] [DEBUG] Created connection 696018631. 
+[2023-07-05 10:31:13][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@297c66c7] 
+[2023-07-05 10:31:13][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:31:13][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:31:13][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:31:13][getAllBoard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 2023-07-04 20:39:37 
+[2023-07-05 10:31:13][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:31:13][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:31:13][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:31:13][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:31:13][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:31:13][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:31:13][getAllBoard] [137] [DEBUG] <==      Total: 7 
+[2023-07-05 10:31:14][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:31:14][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:31:14][PooledDataSource] [434] [DEBUG] Created connection 810014554. 
+[2023-07-05 10:31:14][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3047d75a] 
+[2023-07-05 10:31:14][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE SEQ = ? 
+[2023-07-05 10:31:14][getOneboard] [137] [DEBUG] ==> Parameters: 8(String) 
+[2023-07-05 10:31:14][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:31:14][getOneboard] [143] [TRACE] <==        Row: 8, 냠ㄴ먄먄, 냠냠, 냐먀냔먐ㄴ, 2023-07-04 20:39:37 
+[2023-07-05 10:31:14][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:31:17][BoardDAOImpl] [53] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:31:17][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:31:17][PooledDataSource] [434] [DEBUG] Created connection 2147308187. 
+[2023-07-05 10:31:17][setUpdateBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET TITLE=?,CONTENT=? WHERE SEQ = ? 
+[2023-07-05 10:31:17][setUpdateBoard] [137] [DEBUG] ==> Parameters: ㅁㄴㅇ(String), ㅁㄴㅇㅁㄴㅇㅁㄴㅇ(String), 8(String) 
+[2023-07-05 10:31:17][setUpdateBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:31:17][BoardDAOImpl] [38] [INFO] getOneboard 실행 
+[2023-07-05 10:31:17][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:31:17][PooledDataSource] [434] [DEBUG] Created connection 1190015357. 
+[2023-07-05 10:31:17][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@46ee317d] 
+[2023-07-05 10:31:17][getOneboard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE FROM SIMPLEBOARD WHERE SEQ = ? 
+[2023-07-05 10:31:17][getOneboard] [137] [DEBUG] ==> Parameters: 8(String) 
+[2023-07-05 10:31:17][getOneboard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, CONTENT, REGDATE 
+[2023-07-05 10:31:17][getOneboard] [143] [TRACE] <==        Row: 8, ㅁㄴㅇ, 냠냠, ㅁㄴㅇㅁㄴㅇㅁㄴㅇ, 2023-07-04 20:39:37 
+[2023-07-05 10:31:17][getOneboard] [137] [DEBUG] <==      Total: 1 
+[2023-07-05 10:31:19][BoardDAOImpl] [46] [INFO] setDeleteBoard 실행 
+[2023-07-05 10:31:19][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:31:19][PooledDataSource] [434] [DEBUG] Created connection 118492599. 
+[2023-07-05 10:31:19][setDeleteBoard] [137] [DEBUG] ==>  Preparing: UPDATE SIMPLEBOARD SET DELFLAG='Y' WHERE SEQ=? 
+[2023-07-05 10:31:19][setDeleteBoard] [137] [DEBUG] ==> Parameters: 8(String) 
+[2023-07-05 10:31:19][setDeleteBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:31:19][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:31:19][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:31:19][PooledDataSource] [434] [DEBUG] Created connection 1272689136. 
+[2023-07-05 10:31:19][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4bdbb1f0] 
+[2023-07-05 10:31:19][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:31:19][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:31:19][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:31:19][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:31:19][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:31:19][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:31:19][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:31:19][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:31:19][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:31:19][getAllBoard] [137] [DEBUG] <==      Total: 6 
+[2023-07-05 10:31:25][BoardDAOImpl] [30] [INFO] setInsertBoard 실행 
+[2023-07-05 10:31:25][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:31:25][PooledDataSource] [434] [DEBUG] Created connection 923956266. 
+[2023-07-05 10:31:25][setInsertBoard] [137] [DEBUG] ==>  Preparing: INSERT INTO SIMPLEBOARD(SEQ,WRITER,TITLE,CONTENT,DELFLAG) VALUES (SIMPLEBOARD_SEQ.NEXTVAL,?,?,?,'N') 
+[2023-07-05 10:31:25][setInsertBoard] [137] [DEBUG] ==> Parameters: ㅁㄴㅇㅁㄴㅇ(String), ㅁㄴㅇㅁㄴㅇ(String), ㅁㄴㅇㅁㄴㅇㅁㄴㅇ(String) 
+[2023-07-05 10:31:25][setInsertBoard] [137] [DEBUG] <==    Updates: 1 
+[2023-07-05 10:31:25][BoardDAOImpl] [22] [INFO] getAllBoard 실행 
+[2023-07-05 10:31:25][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-05 10:31:25][PooledDataSource] [476] [DEBUG] Waiting as long as 20000 milliseconds for connection. 
+[2023-07-05 10:31:45][PooledDataSource] [466] [DEBUG] Claimed overdue connection 527559154. 
+[2023-07-05 10:31:45][getAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ,TITLE,WRITER,REGDATE FROM SIMPLEBOARD WHERE DELFLAG = 'N' ORDER BY REGDATE DESC 
+[2023-07-05 10:31:45][getAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-05 10:31:45][getAllBoard] [143] [TRACE] <==    Columns: SEQ, TITLE, WRITER, REGDATE 
+[2023-07-05 10:31:45][getAllBoard] [143] [TRACE] <==        Row: 11, ㅁㄴㅇㅁㄴㅇ, ㅁㄴㅇㅁㄴㅇ, 2023-07-05 10:31:25 
+[2023-07-05 10:31:45][getAllBoard] [143] [TRACE] <==        Row: 7, 내용, 작성, 2023-07-04 20:38:43 
+[2023-07-05 10:31:45][getAllBoard] [143] [TRACE] <==        Row: 6, 작성자 없음, 제목없음, 2023-07-04 20:38:20 
+[2023-07-05 10:31:45][getAllBoard] [143] [TRACE] <==        Row: 4, 말랑말랑, 말랑, 2023-07-04 17:38:40 
+[2023-07-05 10:31:45][getAllBoard] [143] [TRACE] <==        Row: 3, 몽글, 동글, 2023-07-04 16:14:06 
+[2023-07-05 10:31:45][getAllBoard] [143] [TRACE] <==        Row: 2, 세모글, 세모, 2023-07-04 16:13:37 
+[2023-07-05 10:31:45][getAllBoard] [143] [TRACE] <==        Row: 1, 네모글, 네모, 2023-07-04 16:13:14 
+[2023-07-05 10:31:45][getAllBoard] [137] [DEBUG] <==      Total: 7 

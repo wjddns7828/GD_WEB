@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.min.edu.model.DynamicDaoImpl">
+	<!-- 
+		Dynamic Query 사용의 주의점
+		1) 판단문 사용할 때는 객체를 사용해야함 (Object, map)
+		2) 특수문법의 사용시 테스트를 확인해야함
+		3) <where> 사용시 필요한 곳에 작업
+	 -->
+	<sql id="selALl">
+		SELECT JOB_ID, JOB_TITLE, MIN_SALARY, MAX_SALARY
+			FROM JOB
+	</sql>
+	
+	<!-- IF문을 통해서 조건 판단을 만들어서 where절을 추가함 -->
+	<select id="getJobIf" parameterType="java.util.Map"
+							resultType="JobDTO">
+		<include refid="selALl"/>
+		<where>
+			<if test="job_id != null">
+				JOB_ID = #{job_id}
+			</if>
+		</where>
+	</select>
+	
+	<!-- 
+		Iterator를 통해서 쿼리문 생성 (값,값,값....) 문장 생성
+		prameter Type은 list,Map<String,String[]>
+		collection 속성이 List인 경우 list, map인 경우 Map의 key로 입력해줘여함
+	 -->
+	 <!-- ParameterType이 list이기 때문에 collection에 list로 작성하면됨 -->
+	<select id="getJobList" parameterType="java.util.List"
+	 							resultType="JobDTO">
+		<include refid="selALl"/>
+		WHERE JOB_ID IN
+			<foreach collection="list" item="job_id" open="(" separator="," close=")" >
+					#{job_id}
+			</foreach>
+	</select>
+	
+	<!-- parameterType Map이기 떄문에 key는 collection에 작성한다 -->
+	<select id="getJobMap" parameterType="java.util.Map"
+								resultType="JobDTO">
+		<include refid="selALl"/>
+		WHERE JOB_ID IN
+			<foreach collection="ids" item="job_id" open="(" separator="," close=")">
+				#{job_id}
+			</foreach>
+	</select>
+	
+	<!-- Choose 선택문 여러개의 where절 중에서 하나의 쿼리만 생성되도록 한다 -->
+	<select id="getJobChoose" parameterType="JobDTO" resultType="JobDTO">
+		<include refid="selALl"/>
+		<where>
+			<choose>
+				<when test="jobId">
+					JOB_ID = #{jobId}
+				</when>
+				<when test="jobTitle">
+					JOB_TITLE = #{jobTitle}
+				</when>
+				<otherwise></otherwise>
+			</choose>
+		</where>
+	</select>
+	
+	<select id="getJobTrim" parameterType="JobDTO" resultType="JobDTO">
+		<include refid="selALl"/>
+		<trim prefix="where" prefixOverrides="AND">
+			<if test="jobId != null">
+				JOB_ID = #{jobId}
+			</if>
+			<if test="jobTitle != null">
+				AND JOB_TITLE = #{jobTitle}
+			</if>
+		</trim>
+	</select>
+	<!-- 하나의 테이블에 한개 혹은 여러개를 수정 할 때 사용함 -->
+	<delete id="updateJobSet" parameterType="JobDTO">
+		UPDATE JOB
+			<set>
+				<if test="jobId != null">
+					JOB_ID = #{jobId},
+				</if>
+				
+				<if test="jobTitle != null">
+					JOB_TITLE = #{jobTitle}
+				</if>
+			</set>
+			WHERE JOB_ID = 'IT_PROG'
+	</delete>
+	
+	<update id="updateJobTrim" parameterType="JobDTO">>
+		UPDATE JOB
+			<trim prefix="SET" suffixOverrides=",">
+				<if test="jobTitle != null">
+					JOB_TITLE = #{jobTitle},
+				</if>
+				<if test="minSalary > 100">
+					MIN_SALARY = #{minSalary},
+				</if>
+			</trim>
+		WHERE JOB_ID ='IT'
+	</update>
+</mapper>

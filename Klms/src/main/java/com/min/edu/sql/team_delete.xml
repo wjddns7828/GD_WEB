@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.min.edu.model.KlmsDaoImpl">
+	
+	<update id="updateTeamID">
+			UPDATE PLAYER
+				SET TEAM_ID = 'K00'
+					WHERE TEAM_ID = #{team_id}
+	</update>
+	
+	<delete id="delTeam">
+		DELETE TEAM
+			WHERE TEAM_ID =#{team_id} 
+	</delete>
+	
+</mapper>

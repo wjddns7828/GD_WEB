@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jeong.edu.model.BoardDaoImpl">
+
+	<resultMap type="com.jeong.edu.vo.RootBoardDto" id="rootDto">
+		<result column="SEQ" property="seq" />
+		<result column="ID" property="id" />
+		<result column="TITLE" property="title" />
+		<result column="CONTENT" property="content" />
+		
+		<collection property="fdto" resultMap="fdto"/>
+	</resultMap>
+		
+	<resultMap type="com.jeong.edu.vo.FileDto" id="fdto">
+		<result column="F_SEQ" property="f_seq" />
+		<result column="B_SEQ" property="b_seq" />
+		<result column="WRITER" property="writer" />
+		<result column="ORIGIN_FNAME" property="origin_fname" />
+		<result column="STORED_FNAME" property="stored_fname" />
+		<result column="FILE_SIZE" property="file_size" />
+		<result column="FILE_REGDATE" property="f_regdate" />
+		<result column="F_DELFLAG" property="f_delflag" />
+	</resultMap>
+	
+	<select id="getDetailBoard" resultType="rootDto">
+		SELECT ID, TITLE, CONTENT 
+		FROM ROOTBOARD r
+		WHERE SEQ=#{seq}
+	</select>
+
+	<select id="getFile" resultType="fDto">
+		SELECT F_SEQ, B_SEQ, WRITER,ORIGIN_FNAME, STORED_FNAME, FILE_SIZE,F_REGDATE, F_DELFLAG
+			FROM FILEBOARD f 
+			WHERE B_SEQ = #{b_seq}
+	</select>
+	
+	<select id="getReply" resultType="replyDto">
+		SELECT TITLE, REGDATE
+			FROM (SELECT 'ㄴ'||TITLE AS TITLE, REGDATE, ROW_NUMBER() OVER(ORDER BY SYSDATE DESC) RN
+				FROM REPLYBOARD r 
+				WHERE REF= #{ref})
+			WHERE RN BETWEEN #{start} AND #{end}
+	</select>
+	
+	<select id="getTotalpageCount" resultType="java.lang.Integer">
+		SELECT COUNT(*)
+			FROM REPLYBOARD
+	</select>
+	
+	
+	<insert id="insertFile">
+		INSERT INTO FILEBOARD
+			(F_SEQ, B_SEQ, WRITER, ORIGIN_FNAME, STORED_FNAME, FILE_SIZE, F_DELFLAG, F_REGDATE)
+			VALUES(NVL((SELECT MAX(F_SEQ) FROM FILEBOARD r),0)+1,#{b_seq}, #{writer}, #{origin_fname}, #{stored_fname}, #{file_size},'N',SYSDATE)
+	</insert>
+	
+	<insert id="insertBoard">
+		<selectKey keyProperty="seq" resultType="java.lang.Integer" order="BEFORE">
+			SELECT MAX(SEQ)+1 AS seq FROM ROOTBOARD
+		</selectKey>
+		INSERT INTO ROOTBOARD (SEQ, ID, TITLE, CONTENT,REGDATE)
+			VALUES(NVL((SELECT MAX(SEQ)  FROM ROOTBOARD r),0)+1 ,#{id},#{title},#{content},SYSDATE)
+	</insert>
+</mapper>

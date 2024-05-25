@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+<typeAliases>
+	<typeAlias type="com.min.edu.vo.JobVo" alias = "JVO"/>
+</typeAliases>	
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC"/>
+			<dataSource type = "POOLED">
+				<property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+				<property name="url" value="jdbc:oracle:thin:@192.168.8.170:1521:xe"/>
+				<property name="username" value="HR"/>
+				<property name="password" value="hr"/>
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<mappers>
+		<mapper resource = "com/min/edu/sql/A_Jobs_Mapper.xml"/>
+	</mappers>
+</configuration>

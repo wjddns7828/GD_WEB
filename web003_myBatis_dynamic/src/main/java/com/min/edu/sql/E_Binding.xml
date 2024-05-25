@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.min.edu.model.BindingDaoImpl" >
+<!-- 
+	myBatis settings 처리를 통해서 컬럼이 mapUnderbarToCamel
+	JOB_ID -> getJob_id()
+	JOB_ID -> getJobId() <<mapUnderbarToCamel 옵션을 해놓아서 이렇게 됨
+-->
+	<select id="binding01" parameterType="java.util.Map" 
+								resultType="JobDTO">
+			SELECT JOB_ID, JOB_TITLE,MIN_SALARY,MAX_SALARY
+			FROM JOB
+			<!-- WHERE #{COLUMN} = #{VALUE} -->
+			WHERE ${COLUMN} = #{VALUE}
+	</select>
+	
+	<select id="binding02" parameterType="java.util.Map" resultType ="JobDTO">
+			SELECT JOB_ID, JOB_TITLE,MIN_SALARY,MAX_SALARY
+			FROM JOB
+			<!-- 전달되는 쿼리에서 concatenation 을 통해서 처리 -->
+			<!-- WHERE JOB_ID LIKE #{val}||'%' -->
+			<!-- $를 통해서 처리 -->
+			<!-- WHERE JOB_ID LIKE '%${val}%' -->
+			<!-- 값으로 전달하여 처리 -->
+			WHERE JOB_ID LIKE #{val}
+	</select>
+</mapper>

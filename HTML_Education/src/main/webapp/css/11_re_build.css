@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+*{
+	margin: 0px;
+	padding : 0px;
+}
+
+body{
+	background: #fff;
+	font-family: 'Jeju Myeongjo', serif;
+}
+
+a{
+	text-decoration: none;	
+}
+nav a:link, a:visited{
+		color: #fff;
+	}
+nav a:active{
+		color: #04ae00;
+}
+
+nav{
+	background: #000;
+	height: 50px;
+	opacity: 0.8;
+}
+
+li{
+	font-size: 1em;
+	list-style: disc;
+}
+#content{
+	width:100%;
+	margin:0px auto;
+	font-size: 1.8em;
+}
+
+h2{
+	font-size: 1.3em;
+}
+
+p{
+	font-size: 1.3em;
+	line-height: 2;
+}
+
+.photo>img{
+	width:70%;
+	max-width: 240px;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+header{
+	width:100%;
+	height: 300px;
+	background: url("../img/DM/google.png") center no-repeat;
+	background-size: cover;
+	margin: 0px;	
+}
+#main-nav{
+	margin: 0px;
+	padding: 10px;
+}
+#main-nav li{
+	list-style:none;
+	display: inline-block;
+	color: #fff;
+	font-family: "맑은고딕",sans-serif;
+	font-size: 0.8em;
+	margin: 5px 15px;
+}
+li>a:hover{
+	border-bottom : 3px solid #fff;
+	border-bottom-color: #ccc;
+	}
+	
+section{
+	position: relative;
+	width: 100%;
+	padding: 15px 5%;
+}
+#content section:nth-child(odd){
+	background: #eee;
+}
+.page-title{
+	position: absolute;
+	top:20px;
+	left:0px;
+	padding:30px 50px;
+}
+
+.page-title h1{
+	margin-bottom: 30px;
+}
+
+.content{
+	margin: 80px auto 10px;
+	width: 90%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.photo{
+	display:none;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+}
+footer>p{
+	font-family: 'Jeju Myeongjo', serif;
+	font-size: 1.5em;
+	line-height: 100%;
+	color: white;
+	text-align: center;
+}
+/*태블릿*/
+@media screen and (min-width: 760px){
+	header{
+		height: 400px;
+	}
+	#intro, #roadMap{
+		box-sizing: border-box;
+		width: 50%;
+		height: 400px;
+		float: left;
+		margin: 0px;
+		border: 1px dotted #8000ff;
+	}
+	#coffe{
+		clear: both;
+	}
+}
+
+/*PCㅘ면 992px이상*/
+@media screen and (min-width:992px){
+#content{
+width: 995px;
+margin: 0px auto;
+border: 2px solid #008000;
+}
+
+header{
+height: 350px;
+}
+#intro, #roadMap, #coffee{
+box-sizing: border-box;
+clear: both;
+position: relative;
+width: 100%;
+height: 420px;
+padding: 15px 2% 10px 5%;
+}
+
+.content{
+margin: 80px auto 10px;
+width: 90%;
+padding: 20px;
+}
+
+.photo{
+display: block;
+width: 40%;
+}
+
+.photo>img{
+width: 100%;
+max-width: 320px;
+height: auto;
+margin-bottom: 30px
+}
+
+.text{
+width: 42%;
+}
+
+
+#intro .photo, #roadMap .photo{
+float: left;
+margin: 5%;
+}
+#intro .text, #roadMap .text{
+float: left
+}
+
+#coffee .photo{
+float: right;
+margin: 5%;
+}
+
+#coffee .text{
+float: left
+}
+footer{
+clear: both;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fixedBanner {
+		position: fixed;
+		top: 40%; /*창 상단에서부터의 거리*/
+		right: 0px; /*창 우측에서부터의 거리*/
+		width: 100px; /*너비 지정*/
+		height: 100px; /*높이 지정*/
+		z-index: 999; /*요소 중 가장 앞쪽으로 배치*/
+	}
+	

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CheckBox</title>
+<link rel="stylesheet" href="./css/js018.css">
+<script type="text/javascript" src="./js/js018.js"></script>
+</head>
+<body>
+	<div id = "colorBox">
+		<div id="red">빨강</div>
+		<div id="blue">파랑</div>
+		<div id="yellow">노랑</div>
+		<div id="green">초록</div>
+	</div>
+	
+	<div id="base">
+		<form>
+			<!-- TODO js_018_001_1 allselect버튼 -->
+			<input type="checkbox"	name="allcheck" onclick="allSelect(this.checked)">전체 선택<br>
+			<input type="checkbox"	name="chk" 	value="red">빨강<br>
+			<input type="checkbox"	name="chk"	value="blue">파랑<br>
+			<input type="checkbox"	name="chk"	value="yellow">노랑<br>
+			<input type="checkbox"	name="chk"	value="green">초록<br>
+			
+			<input type="button" value="초기화" onclick="clearDiv()">
+			<input type="button" value="선택" onclick="selColor()">
+		</form>
+	</div>
+</body>
+</html>

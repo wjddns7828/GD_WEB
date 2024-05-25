@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.min.edu.join01">
+
+
+		<select id="select01" resultType="com.min.edu.dto.All_DTO">
+			SELECT EMPNO, ENAME, JOB,MGR,SAL,COMM,
+			d.DEPTNO , DNAME ,LOC 
+				FROM EMP e JOIN  DEPT d
+				ON d.DEPTNO =e.DEPTNO 
+		</select>
+</mapper>

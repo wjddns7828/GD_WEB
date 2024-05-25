@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.min.edu.model.KlmsDaoImpl">
+
+<resultMap type="KVO" id="KMAP">
+	<result column="TEAM_ID" property="team_id"/>
+	<result column="PLAYER_NAME" property="player_name"/>
+	<result column="NATION" property="nation"/>
+</resultMap>
+
+	<select id="Fplayer_select"
+				resultType="KVO">
+			SELECT TEAM_ID ,PLAYER_NAME ,NATION
+			FROM PLAYER
+			WHERE TEAM_ID = #{team_id}
+			AND NATION IS NOT NULL
+	</select>
+	
+	<!-- 가장 큰키를 가진 선수 -->
+   <select id="player_tallFw" parameterType="java.lang.String" resultType="KVO">
+      SELECT * 
+      FROM PLAYER p 
+      WHERE HEIGHT = (SELECT MAX(HEIGHT) FROM PLAYER p2)
+    </select>
+</mapper>

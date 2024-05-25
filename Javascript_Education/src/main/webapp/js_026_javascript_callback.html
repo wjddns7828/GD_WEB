@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- Promise는 프로미스가 생성된 시점에는 알려지지 않았을 수도 있는 값을 위한 대리자로,
+	 비동기 연산이 종료된 이후에 결과 값과 실패 사유를 처리 -->
+	 
+<script type="text/javascript">
+	const condition = true;
+	const promise = new Promise((resolve,reject)=>{
+		let a = 1+1;
+		if(a==2){
+			resolve('success');
+		}else{
+			reject('fail');	
+		}
+	});
+	
+	promise
+		.then((msg)=>{
+			console.log("this is [then] "+msg);
+		})
+		.catch((msg)=>{
+			console.log("this is [catch] "+msg);
+		});
+	//15번째 줄의 판단에 의해서 resolve는 then을 reject는 catch를 실행함
+</script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100vh;
+	flex-wrap: wrap;
+}
+
+/* navBar */
+.nav {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	flex-basis: auto;
+	border-right : 1px solid #cacaca; 
+	flex-basis:auto
+}
+.logo{
+	background-image : url("../img/logo.png");
+	background-repeat : no-repeat;
+	background-position : left center;
+	background-size: 60%;
+	flex-grow: 0.6;
+	padding: 20px;
+	display: block;
+	cursor: pointer;
+	flex-basis:auto
+}
+
+.menu{
+	flex-grow: 9;
+	padding: 15px 0;
+	flex-basis:auto
+}
+.menu div{
+	margin: 20px 0;
+	padding: 3px 15px;
+	font-size: large;
+	cursor: pointer;
+}
+
+.menu div img{
+	width: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.menu div:hover{
+	font-weight: bold;
+	background-color: #e9e9e9;
+	border-radius: 15px;
+}
+#submenu{
+	flex-grow: 0.3;
+	cursor: pointer;
+	font-size: large;
+	padding: 0px 15px;
+	flex-basis:auto
+}
+
+#submenu img{
+	width: 40px;
+	vertical-align: middle;
+}
+#popupOpen:hover{
+	font-weight: bold;
+	background-color: #e9e9e9;
+	border-radius: 15px;
+}
+
+.popup{
+	display:none;
+	border-radius:17px;
+	position: absolute;
+	border: 1px solid #e9e9e9;
+	bottom: 10%;
+	left: 3%;
+	padding : 5px;
+	background-color: white;
+	box-shadow:  6px 6px 14px 0px rgba(153,153,153,0.74)
+}
+.popup #line{
+	margin : 10px 0px;
+	height: 3px;
+	background-color: #e9e9e9;
+}
+.popup #sel, #logout{
+	margin: 3px;
+	height: 40px;
+	text-align: left;
+	padding : 0px 100px 0px 15px;
+}
+.popup div:hover{
+	font-weight: bold;
+	background-color: #e9e9e9;
+	border-radius: 15px;
+}
+
+/* 콘텐츠 영역 */
+
+.content {
+	flex-grow: 2.7;
+	flex-basis:auto
+}
+
+/* 계정 정보 */
+.accInfo{
+	display: flex;
+	flex-direction: column;
+	padding: 2%
+}
+.box{
+	border: 1px solid gray;
+	width: 80%;
+	height: 80vh;
+	margin-top: 3%;
+	margin-left: 10%;
+	margin-right: 10%;
+	display:flex;
+	flex-direction: row;
+}
+
+.box>div{
+	border: 1px solid gray;
+}
+.leftbox {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+}
+.accountMenu{
+	display: flex;
+	flex-direction: column;
+	padding: 10px 20px;
+}
+.accountMenu div:hover{
+	background-color: #cacaca;
+	cursor: pointer;
+}
+.settingacc{
+	flex-grow: 1;
+	margin-bottom: 20px;
+}
+.changePw{
+	flex-grow: 1;	
+}
+.accountMenu img{
+	width: 25px;
+	vertical-align:middle;
+}
+
+.leftbox div:nth-child(3){
+	flex-grow: 7;
+	display: flex;
+	flex-direction: column;
+}
+
+p{
+	height:0px;
+	flex-grow: 0.5;
+	font-size: small;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 12px;
+	font-weight: bold;
+}
+p:nth-child(10){
+	color: blue;
+}
+p:hover{
+	background-color: #cacaca;
+}
+aside{
+	font-weight: bold;
+	padding-left: 80px;
+	text-align: right;
+	}
+.rightbox{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	}
+.profileset{
+	padding: 30px 0px 20px 30px;
+}
+
+.profileForm{
+	display:flex;
+	flex-direction: column;
+}
+.website{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+}
+#websitein{
+	padding-left:30px;
+	width:60%;
+	display: flex;
+	flex-direction: column;
+}
+#websitein>input{
+	width: 40%;
+}
+.info{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+	
+}
+.textarea{
+		display: flex;
+		flex-direction: column;
+		width:50%;
+	}
+.gender{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+}
+.selGender{
+	display: flex;
+	flex-direction: column;
+	padding-left: 50px;
+	width:50%;
+}
+span{
+	color: gray;
+	font-size: small;
+}
+
+.view{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+}
+.view>aside{
+	width:90px;
+	padding-left: 70px
+}
+.inview>input{
+	margin-right: 20px;
+}
+.inview{
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+	padding-right: 60px;
+}
+.submitForm{
+	padding-left: 80px;
+}
+.submitbtn{
+    text-align: center;
+    width: 10%;
+    height :100%;
+    border: 1px solid transparent;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.changepw{
+	display: flex;
+	margin-bottom: 30px;
+}
+#inputpw{
+	margin-left: 50px;
+	text-align: right;
+}

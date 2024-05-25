@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#container{
+    width: 700px;
+    margin: 15px auto;
+}
+
+div#op{
+    border: 1px solid gray;
+    width: 700px;
+    height: 100px;
+    margin: 30px auto;
+    /* display: inline-block; */
+    position: relative;
+}
+
+#a,#b{
+    border: 1px solid blueviolet;
+    width: 200px;
+    position: absolute;
+}
+#b{
+    right: 0px;
+}
+
+body{
+    margin: 10px;
+}
+h2{
+    background-color: olivedrab;
+}
+h2#point{
+    cursor: pointer;
+}
+h2#point:hover{
+    color: brown;
+}
+
+img{
+    width: 50px;
+}
+
+
+li>img{
+ width: 20px;   
+}
+
+ol{
+    padding-left: 20px;
+}

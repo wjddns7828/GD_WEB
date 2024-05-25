@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트의 사용방법</title>
+</head>
+<script type="text/javascript" src="./js/js001.js"></script>
+<script type="text/javascript">
+	function embeded(){
+		console.log("임베디드방식")
+		alert("임베디드방식")
+	}
+	function linked(){
+		alert("오버라이드")
+	}
+</script>
+<body>
+	
+	<ul>
+		<li onclick="javascript:alert('인라인 동작')"><em>1.인라인 방식(Inline)</em></li>
+		<li onclick="embeded()">2.임베디드(embeded)</li>
+		<li onclick="linked()">3.링크방식(Link)</li>
+	</ul>
+	
+	<div>
+		<fieldset>
+			<legend>javascript 탐색</legend>
+			<div>
+				연습 : li tag의 두번째 있는 항목을 글자색은 red, 두껍게, 속성에 title="search"를 추가해주세요
+			</div>
+			<button onclick ="search()">적용</button>
+		</fieldset>
+	</div>
+	<script type="text/javascript">
+		function search(){
+			var lis = document.getElementsByTagName("li");//array의 형태로 가져옴
+			console.log(lis[1]);
+			lis[1].style.color="red";
+			lis[1].style.fontWeight="bold";
+			lis[1].title="search";
+			var txt = lis[0].textContent;
+			var html = lis[0].innerHTML;
+			console.log(html,txt);
+			lis[0].innerHTML="<b>글자 변경 가능 실행</b>";
+		}
+	</script>
+</body>
+</html>

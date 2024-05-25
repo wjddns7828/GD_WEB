@@ -1,0 +1,443 @@
+[2023-07-14 10:27:19][LoginController] [41] [INFO] doPost 주소에 의해서 전달받은 값 : null 
+[2023-07-14 10:27:19][LoginController] [45] [INFO] doPost 주소에 의해서 전달받은 값 : user 
+[2023-07-14 10:27:19][LoginController] [46] [INFO] doPost 주소에 의해서 전달받은 값 : 1234 
+[2023-07-14 10:27:19][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-14 10:27:19][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 10:27:19][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 10:27:19][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 10:27:19][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 10:27:19][UserDaoImpl] [21] [INFO] class com.min.edu.model.UserDaoImplloginSelect{password=1234, id=user} 
+[2023-07-14 10:27:19][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:27:20][PooledDataSource] [434] [DEBUG] Created connection 1374116941. 
+[2023-07-14 10:27:20][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@51e75c4d] 
+[2023-07-14 10:27:20][loginSelect] [137] [DEBUG] ==>  Preparing: SELECT ID,NAME,EMAIL, AUTH FROM USERINFO WHERE ID=? AND PASSWORD=? 
+[2023-07-14 10:27:20][loginSelect] [137] [DEBUG] ==> Parameters: user(String), 1234(String) 
+[2023-07-14 10:27:20][loginSelect] [143] [TRACE] <==    Columns: ID, NAME, EMAIL, AUTH 
+[2023-07-14 10:27:20][loginSelect] [143] [TRACE] <==        Row: user, 사용자, user@user.com, U 
+[2023-07-14 10:27:20][loginSelect] [137] [DEBUG] <==      Total: 1 
+[2023-07-14 10:27:20][LoginController] [53] [INFO] loginselect 실행 결과UserVo(id=user, name=사용자, password=null, email=user@user.com, auth=U, delflag=null, joindate=null) 
+[2023-07-14 10:27:20][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 10:27:20][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:27:20][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:27:20][PooledDataSource] [434] [DEBUG] Created connection 817371894. 
+[2023-07-14 10:27:20][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@30b81af6] 
+[2023-07-14 10:27:20][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:27:20][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:27:20][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:27:20][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:27:20][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:27:20][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:27:20][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:27:20][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:27:20][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:27:20][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:27:20][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:27:20][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:27:20][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 10:35:53][LoginController] [41] [INFO] doPost 주소에 의해서 전달받은 값 : null 
+[2023-07-14 10:35:53][LoginController] [45] [INFO] doPost 주소에 의해서 전달받은 값 : user 
+[2023-07-14 10:35:53][LoginController] [46] [INFO] doPost 주소에 의해서 전달받은 값 : 1234 
+[2023-07-14 10:35:53][UserDaoImpl] [21] [INFO] class com.min.edu.model.UserDaoImplloginSelect{password=1234, id=user} 
+[2023-07-14 10:35:53][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:35:53][PooledDataSource] [434] [DEBUG] Created connection 65528350. 
+[2023-07-14 10:35:53][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3e7e21e] 
+[2023-07-14 10:35:53][loginSelect] [137] [DEBUG] ==>  Preparing: SELECT ID,NAME,EMAIL, AUTH FROM USERINFO WHERE ID=? AND PASSWORD=? 
+[2023-07-14 10:35:53][loginSelect] [137] [DEBUG] ==> Parameters: user(String), 1234(String) 
+[2023-07-14 10:35:53][loginSelect] [143] [TRACE] <==    Columns: ID, NAME, EMAIL, AUTH 
+[2023-07-14 10:35:53][loginSelect] [143] [TRACE] <==        Row: user, 사용자, user@user.com, U 
+[2023-07-14 10:35:53][loginSelect] [137] [DEBUG] <==      Total: 1 
+[2023-07-14 10:35:53][LoginController] [53] [INFO] loginselect 실행 결과UserVo(id=user, name=사용자, password=null, email=user@user.com, auth=U, delflag=null, joindate=null) 
+[2023-07-14 10:35:53][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 10:35:53][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:35:53][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:35:53][PooledDataSource] [434] [DEBUG] Created connection 1463298091. 
+[2023-07-14 10:35:53][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@5738282b] 
+[2023-07-14 10:35:53][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:35:53][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:35:53][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:35:53][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:35:53][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:35:53][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:35:53][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:35:53][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:35:53][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:35:53][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:35:53][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:35:53][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:35:53][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 10:35:55][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 10:35:55][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:35:55][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:35:55][PooledDataSource] [434] [DEBUG] Created connection 1547886075. 
+[2023-07-14 10:35:55][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@5c42ddfb] 
+[2023-07-14 10:35:55][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:35:55][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:35:55][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:35:55][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:35:55][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:35:55][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:35:55][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:35:55][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:35:55][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:35:55][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:35:55][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:35:55][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:35:55][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 10:39:15][LoginController] [41] [INFO] doPost 주소에 의해서 전달받은 값 : null 
+[2023-07-14 10:39:15][LoginController] [45] [INFO] doPost 주소에 의해서 전달받은 값 :  
+[2023-07-14 10:39:15][LoginController] [46] [INFO] doPost 주소에 의해서 전달받은 값 :  
+[2023-07-14 10:39:15][UserDaoImpl] [21] [INFO] class com.min.edu.model.UserDaoImplloginSelect{password=, id=} 
+[2023-07-14 10:39:15][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:39:15][PooledDataSource] [434] [DEBUG] Created connection 154319762. 
+[2023-07-14 10:39:15][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@932bb92] 
+[2023-07-14 10:39:15][loginSelect] [137] [DEBUG] ==>  Preparing: SELECT ID,NAME,EMAIL, AUTH FROM USERINFO WHERE ID=? AND PASSWORD=? 
+[2023-07-14 10:39:15][loginSelect] [137] [DEBUG] ==> Parameters: (String), (String) 
+[2023-07-14 10:39:15][loginSelect] [137] [DEBUG] <==      Total: 0 
+[2023-07-14 10:39:15][LoginController] [53] [INFO] loginselect 실행 결과null 
+[2023-07-14 10:39:17][LoginController] [41] [INFO] doPost 주소에 의해서 전달받은 값 : null 
+[2023-07-14 10:39:17][LoginController] [45] [INFO] doPost 주소에 의해서 전달받은 값 : asd 
+[2023-07-14 10:39:17][LoginController] [46] [INFO] doPost 주소에 의해서 전달받은 값 : asd 
+[2023-07-14 10:39:17][UserDaoImpl] [21] [INFO] class com.min.edu.model.UserDaoImplloginSelect{password=asd, id=asd} 
+[2023-07-14 10:39:17][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:39:17][PooledDataSource] [434] [DEBUG] Created connection 405344325. 
+[2023-07-14 10:39:17][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@18291045] 
+[2023-07-14 10:39:17][loginSelect] [137] [DEBUG] ==>  Preparing: SELECT ID,NAME,EMAIL, AUTH FROM USERINFO WHERE ID=? AND PASSWORD=? 
+[2023-07-14 10:39:17][loginSelect] [137] [DEBUG] ==> Parameters: asd(String), asd(String) 
+[2023-07-14 10:39:17][loginSelect] [137] [DEBUG] <==      Total: 0 
+[2023-07-14 10:39:17][LoginController] [53] [INFO] loginselect 실행 결과null 
+[2023-07-14 10:39:20][LoginController] [41] [INFO] doPost 주소에 의해서 전달받은 값 : null 
+[2023-07-14 10:39:20][LoginController] [45] [INFO] doPost 주소에 의해서 전달받은 값 : user 
+[2023-07-14 10:39:20][LoginController] [46] [INFO] doPost 주소에 의해서 전달받은 값 : 1234 
+[2023-07-14 10:39:20][UserDaoImpl] [21] [INFO] class com.min.edu.model.UserDaoImplloginSelect{password=1234, id=user} 
+[2023-07-14 10:39:20][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:39:20][PooledDataSource] [434] [DEBUG] Created connection 535643935. 
+[2023-07-14 10:39:20][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@1fed471f] 
+[2023-07-14 10:39:20][loginSelect] [137] [DEBUG] ==>  Preparing: SELECT ID,NAME,EMAIL, AUTH FROM USERINFO WHERE ID=? AND PASSWORD=? 
+[2023-07-14 10:39:20][loginSelect] [137] [DEBUG] ==> Parameters: user(String), 1234(String) 
+[2023-07-14 10:39:20][loginSelect] [143] [TRACE] <==    Columns: ID, NAME, EMAIL, AUTH 
+[2023-07-14 10:39:20][loginSelect] [143] [TRACE] <==        Row: user, 사용자, user@user.com, U 
+[2023-07-14 10:39:20][loginSelect] [137] [DEBUG] <==      Total: 1 
+[2023-07-14 10:39:20][LoginController] [53] [INFO] loginselect 실행 결과UserVo(id=user, name=사용자, password=null, email=user@user.com, auth=U, delflag=null, joindate=null) 
+[2023-07-14 10:39:20][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 10:39:20][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:39:20][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:39:20][PooledDataSource] [434] [DEBUG] Created connection 38835979. 
+[2023-07-14 10:39:20][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@250970b] 
+[2023-07-14 10:39:20][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:39:20][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:39:20][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:39:20][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:39:20][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:39:20][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:39:20][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:39:20][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:39:20][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:39:20][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:39:20][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:39:20][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:39:20][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 10:39:21][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 10:39:21][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:39:21][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:39:21][PooledDataSource] [434] [DEBUG] Created connection 673205990. 
+[2023-07-14 10:39:21][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@28204ee6] 
+[2023-07-14 10:39:21][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:39:21][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:39:21][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:39:21][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:39:21][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:39:21][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:39:21][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:39:21][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:39:21][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:39:21][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:39:21][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:39:21][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:39:21][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 10:39:22][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 10:39:22][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:39:22][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:39:22][PooledDataSource] [466] [DEBUG] Claimed overdue connection 1374116941. 
+[2023-07-14 10:39:22][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:39:22][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:39:22][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:39:22][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:39:22][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:39:22][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:39:22][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:39:22][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:39:22][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:39:22][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:39:22][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:39:22][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:39:22][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 10:39:23][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 10:39:23][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:39:23][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:39:23][PooledDataSource] [466] [DEBUG] Claimed overdue connection 817371894. 
+[2023-07-14 10:39:23][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:39:23][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:39:23][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:39:23][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:39:23][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:39:23][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:39:23][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:39:23][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:39:23][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:39:23][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:39:23][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:39:23][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:39:23][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 10:39:25][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 10:39:25][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:39:25][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:39:25][PooledDataSource] [466] [DEBUG] Claimed overdue connection 65528350. 
+[2023-07-14 10:39:25][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:39:25][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:39:25][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:39:25][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:39:25][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:39:25][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:39:25][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:39:25][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:39:25][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:39:25][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:39:25][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:39:25][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:39:25][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 10:40:51][LoginController] [41] [INFO] doPost 주소에 의해서 전달받은 값 : null 
+[2023-07-14 10:40:51][LoginController] [45] [INFO] doPost 주소에 의해서 전달받은 값 : user 
+[2023-07-14 10:40:51][LoginController] [46] [INFO] doPost 주소에 의해서 전달받은 값 : 1234 
+[2023-07-14 10:40:51][UserDaoImpl] [21] [INFO] class com.min.edu.model.UserDaoImplloginSelect{password=1234, id=user} 
+[2023-07-14 10:40:51][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:40:51][PooledDataSource] [466] [DEBUG] Claimed overdue connection 1463298091. 
+[2023-07-14 10:40:51][loginSelect] [137] [DEBUG] ==>  Preparing: SELECT ID,NAME,EMAIL, AUTH FROM USERINFO WHERE ID=? AND PASSWORD=? 
+[2023-07-14 10:40:51][loginSelect] [137] [DEBUG] ==> Parameters: user(String), 1234(String) 
+[2023-07-14 10:40:51][loginSelect] [143] [TRACE] <==    Columns: ID, NAME, EMAIL, AUTH 
+[2023-07-14 10:40:51][loginSelect] [143] [TRACE] <==        Row: user, 사용자, user@user.com, U 
+[2023-07-14 10:40:51][loginSelect] [137] [DEBUG] <==      Total: 1 
+[2023-07-14 10:40:51][LoginController] [53] [INFO] loginselect 실행 결과UserVo(id=user, name=사용자, password=null, email=user@user.com, auth=U, delflag=null, joindate=null) 
+[2023-07-14 10:40:51][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 10:40:51][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:40:51][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:40:51][PooledDataSource] [466] [DEBUG] Claimed overdue connection 1547886075. 
+[2023-07-14 10:40:51][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:40:51][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:40:51][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:40:51][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:40:51][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:40:51][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:40:51][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:40:51][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:40:51][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:40:51][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:40:51][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:40:51][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:40:51][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 10:40:52][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 10:40:52][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:40:52][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:40:52][PooledDataSource] [466] [DEBUG] Claimed overdue connection 154319762. 
+[2023-07-14 10:40:52][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:40:52][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:40:52][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 10:40:52][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 10:40:52][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:40:52][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:40:52][PooledDataSource] [466] [DEBUG] Claimed overdue connection 405344325. 
+[2023-07-14 10:40:52][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:40:52][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:40:52][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 10:40:52][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 10:40:52][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:40:52][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:40:52][PooledDataSource] [466] [DEBUG] Claimed overdue connection 535643935. 
+[2023-07-14 10:40:52][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:40:52][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:40:52][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:40:52][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 10:41:38][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-14 10:41:38][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 10:41:38][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 10:41:38][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 10:41:38][PooledDataSource] [363] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 10:41:38][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:41:38][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:41:39][PooledDataSource] [434] [DEBUG] Created connection 1350201522. 
+[2023-07-14 10:41:39][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@507a70b2] 
+[2023-07-14 10:41:39][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:41:39][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:41:39][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:41:39][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:41:39][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:41:39][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:41:39][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:41:39][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:41:39][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:41:39][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:41:39][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:41:39][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:41:39][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 10:42:41][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 10:42:41][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 10:42:41][PooledDataSource] [434] [DEBUG] Created connection 801883518. 
+[2023-07-14 10:42:41][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@2fcbc57e] 
+[2023-07-14 10:42:41][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 10:42:41][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 10:42:41][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 10:42:41][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 10:42:41][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 10:42:41][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 10:42:41][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 10:42:41][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 10:42:41][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 10:42:41][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 10:42:41][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 10:42:41][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 10:42:41][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 11:11:56][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 11:11:56][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 11:11:56][PooledDataSource] [434] [DEBUG] Created connection 1476054094. 
+[2023-07-14 11:11:56][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@57facc4e] 
+[2023-07-14 11:11:56][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 11:11:56][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 11:11:56][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 11:11:56][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 11:11:56][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 11:11:56][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 11:11:56][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 11:11:56][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 11:11:56][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 11:11:56][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 11:11:56][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 11:11:56][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 11:11:56][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 11:12:02][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 11:12:02][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 11:12:02][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 11:12:02][PooledDataSource] [434] [DEBUG] Created connection 1169378689. 
+[2023-07-14 11:12:02][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@45b34d81] 
+[2023-07-14 11:12:02][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 11:12:02][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 11:12:02][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 11:12:02][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 11:12:02][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 11:12:02][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 11:12:02][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 11:12:02][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 11:12:02][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 11:12:02][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 11:12:02][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 11:12:02][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 11:12:02][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 11:15:10][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 11:15:10][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 11:15:10][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 11:15:10][PooledDataSource] [434] [DEBUG] Created connection 293540915. 
+[2023-07-14 11:15:10][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@117f1433] 
+[2023-07-14 11:15:10][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 11:15:10][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 11:15:10][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 11:15:10][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 11:15:10][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 11:15:10][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 11:15:10][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 11:15:10][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 11:15:10][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 11:15:10][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 11:15:10][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 11:15:10][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 11:15:10][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 11:15:11][MainServlet] [26] [INFO] MainServlet doGet 
+[2023-07-14 11:15:11][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 11:15:11][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 11:15:11][PooledDataSource] [434] [DEBUG] Created connection 405344325. 
+[2023-07-14 11:15:11][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@18291045] 
+[2023-07-14 11:15:11][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 11:15:11][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 11:15:11][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 11:15:11][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 11:15:11][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 11:15:11][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 11:15:11][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 11:15:11][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 11:15:11][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 11:15:11][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 11:15:11][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 11:15:11][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 11:15:11][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 11:15:15][AnswerBoardDaoImpl] [27] [INFO] nullselectAllBoard 
+[2023-07-14 11:15:15][JdbcTransaction] [137] [DEBUG] Opening JDBC Connection 
+[2023-07-14 11:15:15][PooledDataSource] [434] [DEBUG] Created connection 539300269. 
+[2023-07-14 11:15:15][JdbcTransaction] [101] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@202511ad] 
+[2023-07-14 11:15:15][selectAllBoard] [137] [DEBUG] ==>  Preparing: SELECT SEQ, ID, TITLE,"REF", STEP, "DEPTH", REGDATE, DELFLAG FROM ANSWERBOARD ORDER BY REF DESC, STEP ASC 
+[2023-07-14 11:15:15][selectAllBoard] [137] [DEBUG] ==> Parameters:  
+[2023-07-14 11:15:15][selectAllBoard] [143] [TRACE] <==    Columns: SEQ, ID, TITLE, REF, STEP, DEPTH, REGDATE, DELFLAG 
+[2023-07-14 11:15:15][selectAllBoard] [143] [TRACE] <==        Row: 36, hello, <span style="color:red">공지사항</span>, 5, 0, 0, 2023-07-13 09:38:44, N 
+[2023-07-14 11:15:15][selectAllBoard] [143] [TRACE] <==        Row: 35, hello, 새글작성중, 4, 0, 0, 2023-07-13 09:36:33, N 
+[2023-07-14 11:15:15][selectAllBoard] [143] [TRACE] <==        Row: 34, hello, 새글작성입니다(2), 3, 0, 0, 2023-07-13 09:35:12, N 
+[2023-07-14 11:15:15][selectAllBoard] [143] [TRACE] <==        Row: 29, A001, ROOT 글작성, 2, 0, 0, 2023-07-12 11:24:36, N 
+[2023-07-14 11:15:15][selectAllBoard] [143] [TRACE] <==        Row: 23, user, TEST_제목, 1, 0, 0, 2023-07-11 11:03:59, N 
+[2023-07-14 11:15:15][selectAllBoard] [143] [TRACE] <==        Row: 31, hello, 답글테스트, 1, 1, 1, 2023-07-12 16:17:52, N 
+[2023-07-14 11:15:15][selectAllBoard] [143] [TRACE] <==        Row: 32, user, 맞아, 1, 2, 2, 2023-07-12 16:21:26, N 
+[2023-07-14 11:15:15][selectAllBoard] [143] [TRACE] <==        Row: 30, hello, 야, 1, 3, 1, 2023-07-12 16:17:29, N 
+[2023-07-14 11:15:15][selectAllBoard] [143] [TRACE] <==        Row: 33, user, ㅈ, 1, 4, 2, 2023-07-12 16:22:56, N 
+[2023-07-14 11:15:15][selectAllBoard] [137] [DEBUG] <==      Total: 9 
+[2023-07-14 12:34:01][BikeController] [20] [INFO] 요청받은 커맨드 값 : null 
+[2023-07-14 12:34:16][BikeController] [20] [INFO] 요청받은 커맨드 값 : second 
+[2023-07-14 12:41:40][BikeController] [20] [INFO] 요청받은 커맨드 값 : first 
+[2023-07-14 15:02:47][BikeController] [20] [INFO] 요청받은 커맨드 값 : first 
+[2023-07-14 15:05:19][BikeController] [20] [INFO] 요청받은 커맨드 값 : first 
+[2023-07-14 15:05:29][BikeController] [20] [INFO] 요청받은 커맨드 값 : first 
+[2023-07-14 15:06:29][BikeController] [20] [INFO] 요청받은 커맨드 값 : second 
+[2023-07-14 15:06:32][BikeController] [20] [INFO] 요청받은 커맨드 값 : first 
+[2023-07-14 15:08:41][BikeController] [20] [INFO] 요청받은 커맨드 값 : first 
+[2023-07-14 17:15:33][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-14 17:15:33][PooledDataSource] [373] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 17:15:33][PooledDataSource] [373] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 17:15:33][PooledDataSource] [373] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 17:15:33][PooledDataSource] [373] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 17:15:33][BikeDaoImpl] [19] [INFO] BikeDaoImpl bikeInsert446 
+[2023-07-14 17:15:33][JdbcTransaction] [143] [DEBUG] Opening JDBC Connection 
+[2023-07-14 17:15:34][PooledDataSource] [448] [DEBUG] Created connection 1033671078. 
+[2023-07-14 17:15:34][JdbcTransaction] [107] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3d9c91a6] 
+[2023-07-14 17:15:34][bikeInsert] [137] [DEBUG] ==>  Preparing: INSERT INTO SEOULBIKE (NEW_ADDR, CONTENT_ID, ADDR_GU, LONGITUDE, CRADLE_COUNT, LATITUDE, CONTENT_NM) VALUES(?, ?, ?, ?, ?, ?, ?) 
+[2023-07-14 17:17:37][LogFactory] [109] [DEBUG] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter. 
+[2023-07-14 17:17:37][PooledDataSource] [373] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 17:17:37][PooledDataSource] [373] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 17:17:37][PooledDataSource] [373] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 17:17:37][PooledDataSource] [373] [DEBUG] PooledDataSource forcefully closed/removed all connections. 
+[2023-07-14 17:17:37][BikeDaoImpl] [19] [INFO] BikeDaoImpl bikeInsert446 
+[2023-07-14 17:17:37][JdbcTransaction] [143] [DEBUG] Opening JDBC Connection 
+[2023-07-14 17:17:37][PooledDataSource] [448] [DEBUG] Created connection 780412797. 
+[2023-07-14 17:17:37][JdbcTransaction] [107] [DEBUG] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@2e84277d] 
+[2023-07-14 17:17:37][bikeInsert] [137] [DEBUG] ==>  Preparing: INSERT INTO SEOULBIKE (NEW_ADDR, CONTENT_ID, ADDR_GU, LONGITUDE, CRADLE_COUNT, LATITUDE, CONTENT_NM) VALUES(?, ?, ?, ?, ?, ?, ?) 

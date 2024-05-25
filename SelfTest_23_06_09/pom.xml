@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.min.edu</groupId>
+  <artifactId>SelfTest_23_06_09</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SelfTest_23_06_09 Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <!-- Oracle DataBase를 접속하기 위한 OJDBC라이브러리 -->
+    <dependency>
+    	<groupId>com.oracle.database.jdbc</groupId>
+    	<artifactId>ojdbc10</artifactId>
+    	<version>19.18.0.0</version>
+	</dependency>
+  	<!-- myBatis FrameWork를 사용하기 위한 라이브러리 -->
+  	<dependency>
+    	<groupId>org.mybatis</groupId>
+    	<artifactId>mybatis</artifactId>
+    	<version>3.5.6</version>
+	</dependency>
+    <!-- DTO/VO의 은닉화 되어있는 객체를 쉽게 사용하기 위한 라이브러리-->
+    <dependency>
+ 	   <groupId>org.projectlombok</groupId>
+	    <artifactId>lombok</artifactId>
+	    <version>1.18.24</version>
+	</dependency>
+	<!-- Log(콘솔/DailyFile)을 출력해주는 라이브러리-->
+	<dependency>
+    	<groupId>log4j</groupId>
+    	<artifactId>log4j</artifactId>
+    	<version>1.2.17</version>
+	</dependency>
+
+	<!-- Test도구 TDD-->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+  </dependencies>
+  <build>
+  	<plugins>
+  		<plugin>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  			<version>3.10.1</version>
+  			<configuration>
+  				<source>17</source>
+  				<target>17</target>
+  			</configuration>
+  		</plugin>
+  		
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-war-plugin</artifactId>
+  			 <version>3.3.2</version>
+  		</plugin>
+  	</plugins>
+  </build>
+</project>

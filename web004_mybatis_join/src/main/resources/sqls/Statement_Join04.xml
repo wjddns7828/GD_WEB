@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.min.edu.join04">
+
+	<resultMap type="com.min.edu.dto.Team_DTO4" id="TeamDto">
+		<result property="team_name" column="TEAM_NAME"/>
+		<result property="region_name" column="REGION_NAME"/>
+		<result property="address" column="ADDRESS"/>
+		<result property="homepage" column="HOMEPAGE"/>
+	</resultMap>
+	
+	<resultMap type="com.min.edu.dto.Player_DTO4" id="JoinDto">
+		<result property="player_id" column="PLAYER_ID"/>
+		<result property="player_name" column="PLAYER_NAME"/>
+		<result property="position" column="POSITION"/>
+		<result property="back_no" column="BACK_NO"/>
+		<collection property="tdto" resultMap="TeamDto"/>
+	</resultMap>
+	
+	<!-- 
+		이름이 같으면서 팀이 같은 선수가 있다
+		JUnitTest 및 쿼리의 로그의 경우 483명의 모든 값이 출력된다
+		하지만 MyBatis의 객체의 결과에서 "같은 이름 같은 팀" 이라면 MyBatis에서 값을 재정렬
+		unique를 가지고 있는 player_id포함하여 myBatis가 출력된다 => 483개가 출력
+		unique를 사용하지않으면 MyBatis가 출력은 =>  482개가 된다
+	 -->
+	<select id="joinCombine04" resultMap="JoinDto">
+		SELECT PLAYER_NAME ,"POSITION",BACK_NO ,
+		TEAM_NAME ,REGION_NAME ,ADDRESS ,HOMEPAGE 
+		FROM PLAYER p JOIN TEAM t 
+		ON p.TEAM_ID = t.TEAM_ID 
+	</select>
+</mapper>

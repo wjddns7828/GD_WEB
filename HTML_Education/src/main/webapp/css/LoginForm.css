@@ -1,0 +1,10 @@
+@charset "UTF-8";
+._ab1y {
+    color: rgb(var(--ig-primary-text));
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 12px;
+    max-width: 350px
+}

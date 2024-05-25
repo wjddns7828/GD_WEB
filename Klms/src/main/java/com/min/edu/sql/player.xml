@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.min.edu.model.KlmsDaoImpl">
+
+	<!-- 특정 팀에 보유중인 외국인 선수 명수 체크 -->
+	<select id="FCnt" parameterType="java.lang.String"
+		resultType="java.lang.Integer">
+		SELECT FOREIGNER_COUNT
+		FROM TEAM t
+		WHERE t.TEAM_ID = #{team_id}
+	</select>
+	
+	<!-- 선수 영입(insert) -->
+	<insert id="player_add" parameterType="KVO">
+		INSERT INTO PLAYER p (PLAYER_ID,PLAYER_NAME,TEAM_ID,"POSITION",NATION,HEIGHT) 
+		VALUES(#{player_id},#{player_name},#{team_id},#{position},#{nation},#{height})
+	</insert>
+	<!-- 선수 방출(delete) -->
+   <delete id="player_delete" parameterType="java.util.Map">
+      DELETE FROM PLAYER p 
+      WHERE PLAYER_NAME = #{player_name}
+      AND TEAM_ID = #{team_id}
+   </delete>
+   
+   <!-- 선수 이적(update) -->
+     <update id="player_update" parameterType="java.util.Map">
+      UPDATE PLAYER SET TEAM_ID = #{new_team_id}
+      WHERE PLAYER_NAME = #{player_name}
+      AND TEAM_ID = #{team_id}
+   </update>
+   
+</mapper>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form요소</title>
+<script type="text/javascript" src="./js/js016.js"></script>
+</head>
+<body>
+	<!-- 
+		HTML DTD의 문법에 의해서 작성하고 Browser에 의해서 변역되서 보여짐
+		문서의 DOCTYPE에 의해서 번역하고 보여지게됨
+		
+		server(ip,port)에 값을 전송 할 수 있다 ==> protocol==>HTTP
+		값을 전송하는 방식 주소, HTML을 전송하는 방식으로 나뉨
+		HTML을 전송하기 위해서는 form 요소를 사용함
+		<form></form>에 작성이 되어야 하고
+		form내부 혹은 외부에서 submit을 통해서 action의 요청으로 server에 전송하게 됨
+		전송된 객체는 HttpServletRequest 객체로 전송
+	 -->
+	 
+	 <h3>protocol처리 방식</h3>
+	 <fieldset>
+	 	<label>페이지 /네이버 첫페이지 검색 호출</label>
+	 	<!-- GET방식 호출됨 -->
+	 	<!-- server의 주소 : search.naver.com/search.naver -->
+	 	<!-- server에 전달되는 값 : QueryString name=value -->
+	 	<!-- 완성된 주소 : search.naver.com/search.naver?query=날씨 -->
+	 	<div>
+	 		<ul>
+	 			<li>
+	 				a tag방식 : <br>
+	 				<a href="https://search.naver.com/search.naver?query=날씨">네이버 날씨 검색</a>
+	 			</li>
+	 			<li>
+	 				form전송방식:<br>
+	 				<form name="frm" id="was" action="https://search.naver.com/search.naver">
+	 					<input type="text" name="query">검색어<br>
+	 					<input type="submit" value="검색">
+	 					<input type="reset" value="input초기화">
+	 				</form>
+	 			</li>
+	 			<li>
+	 				외부 submit실행<br>
+	 				<button onclick="jsSubmit()">javascript를통해서 submit을 날릴 수 있음</button>
+	 			</li>
+	 		</ul>
+	 	</div>
+	 </fieldset>
+	 
+	 <!-- https://starbuzzcoffee.com/processorder.php -->
+	 <!-- 
+	 	form요소
+	 	- text,textarea
+	 	- password
+	 	- radio
+	 	- checkbox
+	 	- file
+	 	- button
+	 	- submit
+	 	- date
+	 	- select,option
+	  -->
+	 <fieldset>
+	 	<form action="https://starbuzzcoffee.com/processorder.php"method="get">
+	 	<div>커피선택</div>
+	 	<!-- 
+	 		select> option중에서 하나의 선택된 value만을 전송시킴
+	 		선택된 option(selected)되어 있지 않다면 기본은 첫번째 자식노드가 선택됨
+	 	 -->
+	 	<select name = "beans">
+	 		<option value="coffe01">케냐AA</option>
+	 		<option value="coffe02" selected="selected">에티오피아</option>
+	 		<option value="coffe03">아라비카</option>
+	 	</select>
+	 		<div>
+	 			<label>유형</label>
+	 			<!-- radio, checkbox : 상태는 :checked -->
+	 			<!-- radio는 여러개를 name을 통해서 그룹으로 만들어 그 중에 한개만 선택되도록 만듬-->
+	 			<p>
+	 				<input type="radio" name="beantype" value="비행기" checked>비행기<br>
+	 				<input type="radio" name="beantype" value="자동차">자동차<br>
+	 				<input type="radio" name="beantype" value="배">배<br>
+	 			</p>
+	 		</div>
+	 		<div>
+	 			<label>숫자</label>
+	 			<input type="number" name="bags" min="1" max="4" >
+	 		</div>
+	 		<div>
+	 			<label>날짜</label>
+	 			<input type="date" name="date" id="date" value="1111-01-01">
+	 		</div>
+	 		<div>
+	 			<!-- name이 같은 구룹의 값을 여러개 서버로 전송 -->
+	 			<label>checkBox</label><br>
+	 			<input type="checkbox" name="extra[]" value="box">박스<br>
+	 			<input type="checkbox" name="extra[]" value="message">메세지<br>
+	 		</div>
+	 		<input type="submit" value="값전송">
+	 	</form>
+	 </fieldset>
+	 
+	 <fieldset>
+	 	<!-- text tel textarea -->
+	 	<legend>배송지 주소</legend>
+	 	<form action="https://starbuzzcoffee.com/processorder.php" method="get">
+	 		<div>
+				<label>성명</label>
+				<input type="text" name="name" placeholder="성명을 입력해주세요" required>	 		
+	 		</div>
+	 		
+	 		<div>
+				<label>주소</label>
+				<input type="text" name="address" placeholder="주소를 입력해 주세요" required>	 		
+	 		</div>
+	 		
+	 		<div>
+				<label>지역</label>
+				<input type="text" name="city" placeholder="지역을 입력해 주세요" required>	 		
+	 		</div>
+	 		
+	 		<div>
+				<label>state</label>
+				<input type="text" name="state" placeholder="주를 입력해 주세요" required>	 		
+	 		</div>
+	 		
+	 		<div>
+				<label>우편번호</label>
+				<input type="text" name="zip" placeholder="우편번호를 입력해 주세요" required>	 		
+	 		</div>
+	 		
+	 		<div>
+				<label>전화번호</label>
+				<input type="tel" name="phone" placeholder="전화번호를 입력해 주세요" required>	 		
+	 		</div>
+	 		
+	 		<div>
+	 			<br><label>요구사항</label><br>
+	 			<button onclick ="textareaChk()">textarea확인</button><br>
+	 			<textarea id="txt"rows="5" cols="30" name="comments">안녕하세요</textarea>
+	 		</div>
+	 		<input type="submit" value="주문배송">
+	 	</form>
+	 </fieldset>
+</body>
+</html>

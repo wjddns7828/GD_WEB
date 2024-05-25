@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+table{
+    width: 90%;
+    height: auto;
+}
+
+
+
+.td1{
+    border-top: 1px dashed grey;
+}
+.td2{
+    border-top: 1px dashed grey;
+}
+td.td1,.td3{
+    width: 50px;
+    border-right: 1px dashed grey;
+}
+
+#td4{
+    border-bottom: 1px dashed grey;
+}
+
+.name {
+    border-top: 3px solid black;
+    height: 30px;
+}
+
+#photo{
+    color: gray;
+    text-align: center;
+    font-weight: bold;
+    width: 250px;
+    border: 1px dotted gray;
+
+}
+
+.name,.td1,.td3{
+    margin-left: 30px;
+}
+

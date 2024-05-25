@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+		<h1>안녕하세요</h1>
+		<input type="text" id="message" placeholder="글을 입력해주세요">
+	</div>
+	
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script type="text/javascript">
+	$("#message").keyup(function(){
+		$("h1").text($(this).val());
+	});
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML정리</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/05_hello.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <fieldset>
+        <div id="op">
+        <div id="a">안녕하세요</div>
+        <div id="b">반갑습니다.</div>
+    </fieldset>
+    <div class="container" id="container">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#showbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+            <a class="navbar-brand" href="www.naver.com">Naver</a>
+          </div>
+          <div class="collapse navbar-collapse" id="showbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+               <li><a href="#">게시판</a> </li>
+               <li><a href="#">일정관리</a> </li>
+               <li><a href="./04_hello.html">내부연결</a> </li>
+               <li><a href="http://192.168.8.102:8080/web004_mybatis_join/joinCtrl.do">외부연결</a> </li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Page 1-1</a></li>
+                  <li><a href="#">Page 1-2</a></li>
+                  <li><a href="#">Page 1-3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Page 2</a></li>
+              <li><a href="#">Page 3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#"><span class="glyphicon glyphicon-log-out"></span>로그아웃</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--h1 == 블럭요소(전체 한줄의 크기를 가지고 있다) -->
+      <h1>
+        <a href="https://www.naver.com" target="_blank" title="네이버">
+            다른 사이트로 이동
+        </a>
+      </h1>
+      <h1>코로나 종료 되었습니다</h1>
+      <div>
+        <strong>내일은 비가 그칠까요?</strong> 내일은<input type="date" value="2023-06-21" disabled>입니둥.
+      </div>
+
+        <!-- q요소는 인라인 요소-->
+        <!-- <blockquote> 블럭요소는 고유한 영역을 가지고 있음 h1도 블럭요소임 --> 
+        <!--<div>는 영역요소 다른 태그에 영향을 받지않고 영역을 나눔 class / id를 통해서 css적용이나 event를 할 때 처리함 == slector표현석, dom탐색-->
+        <blockquote>
+            오늘은 즐거운 보충
+            <em><q>DB</q></em>가 준비 되어 있습니다.
+            내일을 위한 오늘을 만들어 봅시다
+        </blockquote>
+        <h2>2023년도 6월 20일</h2>
+        <img src="./img/cloud.png" alt="흐림">
+        <p>
+            이제는 <q>HTML을 시작하고</q>
+            초중반을 진행하고 있습니다 <br>
+            누군가의 끝이 아닌 시작의 연결고리가 되어야 한다
+        </p>
+        <h2 id="point" onclick="javascript:alert('클릭');"><time>2023년 6월 21일</time></h2>
+        <img src="./img/sunny.png" alt="시작">
+        <p>
+            오늘은 HTML 배우고 서버사이드 개발과<br>
+            자신이 개발한 디자인을 적용하는 학습 해야 합니다<br>
+            이쁜 디자인과 편리한 기능을 만들어 주세요
+        </p>
+
+        <!--
+            list태그
+            UL과 OL
+            하위 node로 li를 가지고 있음
+        -->
+        <ol>
+            <li>자바</li>
+            <li>DB</li>
+            <li>HTML</li>
+            <li>
+                <img src="https://cdn0.iconfinder.com/data/icons/logos-21/40/javascript-64.png" alt="javascript">javascript
+            </li>
+        </ol>
+        <button class="btn btn-success btn-lg btn-block">버어튼</button>
+    </div>
+</body>
+</html>

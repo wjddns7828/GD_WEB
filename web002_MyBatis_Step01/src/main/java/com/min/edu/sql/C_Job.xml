@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.min.edu.model.JobIUDDaoImpl">
+
+	<!-- 
+		insert, update, delete는 성공한 row의 갯수를 반환한다
+		
+		insert 성공한 row의 갯수 반환-> 성공여부판단
+		 : 특징 tag가 있음 <selectkey> 
+		   => insert 실행후 insert문에서 생성된 값을 사용하고 싶은 경우
+		   	  <selectkey>를 통해서 전달받은 객체에 값을 입력 할 수 있다
+		   	  
+		MyBatis는 preparedStatement 객체를 사용하여 만들어져 있음
+		=> JDBC에서 ? Binding 하여 하나의 SQL문장을 만들어 처리
+		=> ? 를 #{} : '값'으로 바인딩되어 처리 된다
+	 -->
+
+	<insert id="insert01" parameterType="JVO">
+		INSERT INTO JOB (JOB_ID,JOB_TITLE,MIN_SALARY,MAX_SALARY)
+			VALUES(#{job_id},#{job_title},#{min_salary},#{max_salary})
+	</insert>
+	
+	<delete id="delete01" parameterType="java.util.Map">
+		DELETE FROM JOB
+			WHERE JOB_ID = #{id}
+	</delete>
+	
+	<update id="update01" parameterType="java.util.Map">
+		UPDATE JOB
+			SET JOB_TITLE= #{title}
+			WHERE JOB_ID = #{id}
+	</update>
+
+</mapper>

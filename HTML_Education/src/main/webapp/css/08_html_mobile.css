@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@media screen and (max-width:700px) {
+    body{
+        font-size: small;
+        font-family: Verdana,sans-serif;
+        width: 500px;
+        margin: auto;
+        border: 4px double purple;
+        padding: 5px;
+    }
+    p>img{
+        width: 100%;
+    }
+    #animal>img{
+        width: 20%;
+    }
+    
+    /*h1 h2*/
+    h1, h2{
+        color:#008080;
+    }
+    h1{
+        font-size: 150%;
+    }
+    h2{
+        font-size: 130%;
+    }
+    
+    #footer{
+        font-size:50%;
+        text-align: center;
+        margin-top: 50px;
+        line-height: normal;
+        color:#800000;
+        clear: both;
+    }
+    
+    .ex{
+        font-family: cursive;
+       }
+    .edu{
+        font-weight: bold;
+    }
+    /*a태그의 모든 표현식은 적용하지 않겠다 _처리가 사라짐*/
+    a{
+        text-decoration: none;
+    }
+    /*한번이라도 방문 한 적이 있다면*/
+    a:visited{
+        color: #800000;
+    }
+    /*한번이라도 방문 한 적이 있다면*/
+    #animal a:link{
+        color: orange;
+    }
+    
+    #animal h3{
+        color: #ffffff;
+      text-shadow:
+          0 0 7px #c03150,
+          0 0 10px #63f256,
+          0 0 21px #bdea9c,
+          0 0 42px #0fa,
+          0 0 82px #0fa,
+          0 0 92px #0fa,
+          0 0 102px #0fa,
+          0 0 151px #0fa;
+          font-size: 20px;
+    }
+    #gurantee{
+        border: 3px dotted white;
+        background-color: #27f7f7;
+        padding: 25px;
+        padding-left: 30px;
+        margin: 30px;
+        /* margin-right: 220px; */
+        background-image: url("../img/DM/panda.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+    
+    }
+    #animal{
+        display: none;
+    }
+}

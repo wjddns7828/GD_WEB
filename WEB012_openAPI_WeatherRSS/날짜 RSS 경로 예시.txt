@@ -1,0 +1,7 @@
+$w/rss/channel/item/description/header/x
+$w/rss/channel/item/description/header/y
+$w/rss/channel/pubDate
+$w/rss/channel/item/description/body/data/wfKor
+$w/rss/channel/item/description/body/data/temp
+$w/rss/channel/item/description/body/data/reh
+$w/rss/channel/item/description/body/data/pop

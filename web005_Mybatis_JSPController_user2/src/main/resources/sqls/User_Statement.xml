@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.min.edu.dao.UserDaoImpl">
+
+<sql id="allColumn">
+	SELECT SEQ, ID, NAME, ADDRESS, PHONE, EMAIL, ENABLE, AUTH
+	FROM MEMBERINFO
+</sql>
+
+<!-- 전체 사용자 조회 -->
+<select id="getAllUserStatus" resultType="UDTO">
+	<include refid="allColumn"/>
+</select>
+<!-- 전체 사용자 조회 -->
+<select id="getAllUser" resultType="UDTO">
+	<include refid="allColumn"/>
+		WHERE ENABLE = 'Y'
+</select>
+<!-- 권한 수정 -->
+<update id="updateAuthUser" parameterType="java.util.Map">
+	UPDATE MEMBERINFO 
+		SET AUTH = #{auth} WHERE SEQ=#{seq}
+</update>
+<!-- 사용자입력 -->
+<insert id="insertUser" parameterType="UDTO"> <!-- 불러 올 때 메소드를 불러오고 거기서 ONGL에 따라서 get이 빠짐 그걸 카멜로 바꿔서 id라고 호출이 되는거임 -->
+	INSERT INTO MEMBERINFO (SEQ, ID, PASSWORD, NAME,
+							ADDRESS, PHONE, EMAIL,
+							ENABLE, AUTH)
+	VALUES(MEMBERINFO_SEQ.NEXTVAL,
+					#{id},#{password},#{name},#{address},#{phone},#{email},'Y','USER')
+</insert>
+<!-- 로그인 -->
+<select id="getLogin" parameterType="java.util.Map" resultType="UDTO">
+	<include refid="allColumn"/>
+	WHERE UPPER(ID)=UPPER(#{id}) AND PASSWORD=#{password}
+		AND ENABLE='Y'
+</select>
+<!-- 사용자 정보 조회 -->
+<select id="getUserInfo" parameterType="java.lang.String" resultType="UDTO">
+	SELECT SEQ, ID, PASSWORD,NAME, ADDRESS, PHONE, EMAIL, ENABLE, AUTH
+		FROM MEMBERINFO
+		WHERE SEQ=#{s}
+</select>
+<!-- 사용자 정보 수정 -->
+<update id="updateUserInfo" parameterType="java.util.Map">
+	UPDATE MEMBERINFO 
+		SET ADDRESS = #{address},PHONE=#{phone},EMAIL=#{email}
+		WHERE SEQ=#{seq}
+</update>
+<!-- 사용자 삭제 -->
+<update id="delUser" parameterType="java.lang.String">
+	UPDATE MEMBERINFO SET ENABLE = 'N'
+	WHERE SEQ =#{s}
+</update>
+<!-- ID중복 검사 -->
+<select id="dupulicateId" parameterType="java.lang.String" resultType="java.lang.Integer">
+	SELECT COUNT(*)
+	FROM MEMBERINFO m 
+		WHERE ID=#{id}
+</select>
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.min.edu.model.KlmsDaoImpl">
+
+	<insert id="schedule_add">
+		INSERT INTO SCHEDULE s (STADIUM_ID,SCHE_DATE,GUBUN,HOMETEAM_ID,AWAYTEAM_ID)
+		VALUES(#{stadium_id},#{sche_date},#{gubun},#{hometeam_id},#{awayteam_id})
+	</insert>
+	
+	<update id="schedule_update">
+		UPDATE SCHEDULE SET SCHE_DATE = #{new_sche_date}
+		WHERE SCHE_DATE=#{sche_date}
+		AND STADIUM_ID=#{stadium_id}
+		AND GUBUN ='N'
+	</update>
+	
+</mapper>

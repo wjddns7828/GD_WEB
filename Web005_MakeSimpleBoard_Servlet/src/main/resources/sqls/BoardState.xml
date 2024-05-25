@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.min.edu.dao.BoardDAOImpl">
+
+	<select id="getAllBoard" resultType="BDTO">
+		SELECT SEQ,TITLE,WRITER,REGDATE
+			FROM SIMPLEBOARD
+			WHERE DELFLAG = 'N'
+				ORDER BY REGDATE DESC
+	</select>
+	
+	<insert id="setInsertBoard">
+		INSERT INTO SIMPLEBOARD(SEQ,WRITER,TITLE,CONTENT,DELFLAG)
+			VALUES (SIMPLEBOARD_SEQ.NEXTVAL,#{writer},#{title},#{content},'N')
+	</insert>
+	
+	<select id="getOneboard" resultType="BDTO">
+		SELECT SEQ,TITLE,WRITER,CONTENT,REGDATE
+			FROM SIMPLEBOARD
+				WHERE SEQ = #{seq}
+	</select>
+	
+	<update id="setDeleteBoard">
+		UPDATE SIMPLEBOARD SET DELFLAG='Y'
+			WHERE SEQ=#{seq}
+	</update>
+	
+	<update id="setUpdateBoard">
+		UPDATE SIMPLEBOARD SET TITLE=#{title},CONTENT=#{content}
+		WHERE SEQ = #{seq}
+	</update>
+</mapper>

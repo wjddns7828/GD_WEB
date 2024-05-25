@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS심화</title>
+<style type="text/css">
+	/*
+		embeded : documnet의 head tag 내에 작성하는 방식
+		inline : tag의 style 속성을 작성하는 방식
+		link : 외부의 css 파일에 연결해서 사용하는 방식
+		
+		1) 작성 순서
+		2) 셀렉터의 우선순위
+		
+		embeded 혹은 linked 이던 작성 순위가 하위에 있는 것이 오버라이드 되어 작동 됨
+	*/
+	body{
+		border: 2px dotted lime ;
+		background-color: rgb(143, 207, 141);
+		margin: 20% 0;
+		padding : 0;
+		padding-top: 30%;
+		font-family: monospace;
+	}
+	
+	/*복합으로 작성된 선택자는 선택자의 합으로 우선순위가 정해진다*/
+	h1#a{background-color: white;}
+	h1.b{background-color: olive;}
+	
+	/*
+		id의 사용 방법
+		반드시html내에서 하나의 값으로만 존재해야한다
+		사용시 표현식 #이다
+	*/
+	#a{	/* background-color: sky; */color: purple;}
+	
+	/*클래스의 표현식은 . 이다 클래스는 여러개를 복학접으로 사용이 가능하다*/
+	.b{border:2px solid red;}
+	/*
+		,를 사용하여 여러개의 선택자를 동일한 css를 적용한다
+	*/
+	h2,span{color: orange;}
+	
+	h2.ch{color: silver;}
+	
+	/*클래스는 클래스 속성에 복합으로 작성 및 적용이 가능하다*/
+	
+	.a1{font-size: 20px;}
+	
+	.a2{color:fuchsia;}
+	
+	/*id 속성은 태그에 하나만 존재해야함 하나의 태그만 적용됨*/
+	#a4{background-color: yellow;}
+	#a3{background-color: black; font-size: 10px}
+	
+</style>
+</head>
+<body>
+	
+	<h1 id ="a" class="b">음악 다방</h1>
+	<h2>수고했어 오늘도</h2>
+	<p>수고했어 오늘도, 아무도 너에 슬픔에 관심 없대도.... 나 널 응원해 수고했어 오늘도</p>
+	
+	<h2>제주도</h2>
+	<p>떠나요 둘이서 모든걸 훌훌버리고... 제주도 푸른섬</p>
+	
+	<h2 class="ch">한숨</h2>
+	<p>당신의 한숨.... 그 깊이를 알 순 없지만 정말 수고했어</p>
+	
+	<a href="#" class="a1 a2" id="a4 a3">다른 페이지로 이동</a>
+	<span>테스트용 span</span>
+</body>
+</html>

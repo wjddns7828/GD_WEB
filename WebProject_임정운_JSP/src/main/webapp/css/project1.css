@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+	padding:0px;
+}
+.banner{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+.main{
+	display: flex;
+	padding: 0px 2.5%;
+	justify-content: space-between;
+}
+body{
+	background-color: yellow;
+}
+
+nav{
+	border: 1px solid;
+	width: 100%;
+	display: flex;
+	cursor: pointer;
+}
+section{
+	width: 90%;
+}
+iframe{
+	border: 0px solid #d1d1d1;
+	width: 100%;
+	height: 100vh;
+}
+.content{
+	background-color: rgb(255, 255, 255);	
+	width: 65%;
+	height: 600px;
+	overflow: auto;
+}
+.right{
+	margin-left: 20px;
+	text-align: center;
+}
+.membershipForm{ 
+	width: auto;
+	height: auto;
+	margin: 20px;
+}
+.login_button{
+	width: 100%;
+	border: 1px solid transparent;
+	background-color: #3897f0;
+}
+.player{
+	background-color: red;
+}
+.team{
+	background-color: orange;
+}
+.stadium{
+	background-color: green;
+}
+.cal{
+	background-color: sienna;
+}
+
+ul>img{
+	width: 40px;
+	vertical-align: middle;
+}
+ul{
+	text-align: center;
+	width: 25%;
+	background-color: rgb(148, 148, 148);
+	font-size: large;
+	font-weight: bold;
+	padding: 25px;
+	height: 200px;
+}
+
+ul:hover li{
+	margin: 0;
+	display: block;
+	margin: 10px 0px;
+}
+
+li{
+	padding: 5px 0px;
+    display: none;
+	font-size: small;
+}
+li:hover{
+	font-size: larger;
+}
+
+footer{
+	margin-top: 100px;
+	text-align: center;
+}

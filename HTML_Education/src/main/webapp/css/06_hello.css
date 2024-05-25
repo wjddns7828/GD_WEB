@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*
+    폰트의 적용방법
+    @import방법 : 정해져 있기 때문에 반드시 fontfamily의 이름을 알야아햠
+    @font-face방법
+
+*/
+        /* font-family: 'Dokdo', cursive; */
+        @import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+
+        @font-face{
+            font-family: 'Jeju';
+            src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.ttf) format('truetype');
+        }
+
+    
+    h1,h2{
+        font-family: 'Dokdo', sans-serif;
+    }
+    p{
+        font-family: 'Jeju', monospace;
+    }

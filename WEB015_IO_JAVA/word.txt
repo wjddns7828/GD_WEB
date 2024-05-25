@@ -1,0 +1,5 @@
+resp.setContentType(); // 파일보내기
+객체 / byte는 8byte / String객체
+application으로 시작
+
+set.header("content-comDisposition")

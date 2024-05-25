@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>open을 실행하는 html</title>
+<script type="text/javascript" src="./js/js015.js"></script>
+<style type="text/css">
+	#registForm{
+		border: 1px solid red;
+		border-radius:  15px;
+		background: pink;
+		padding: 10px;
+		
+		position: absolute;
+		top:200px;
+		left:400px;
+		
+		display: none;
+	}
+</style>
+</head>
+<body>
+	<h2>팝업창 만들기</h2>
+	<fieldset>
+	<legend>window.open</legend>
+	<div id="val">장마가 시작됩니다.</div>
+	<button name="btn"onclick="openWindow()">창열기</button>
+	</fieldset>
+	<hr>
+	<fieldset>
+	<legend>Modal</legend>
+	<div>Modal만들기</div>
+	<button name="btn"onclick="registForm()">회원폼</button>
+	</fieldset>
+	
+	<div id="registForm">
+		<!-- form태그를 사용해서 html의 form요소를 서버사이드에 전달 GET / POST / TRACE / DELETE / PUT-->
+		<form action="./regist.do" method="post">
+			<table>
+				<caption>회원가입 정보</caption>
+				<tbody>
+					<tr>
+						<td>아이디</td>
+						<td>
+							<input type="text" name="id"  onclick="idchk()" readonly required>
+							<input type="button" value="아이디체크" onclick="idCheck()">
+						</td>
+					</tr>
+					<tr>
+						<td>비밀번호</td>
+						<td><input type="password" name="pw" required checked></td>
+					</tr>
+				</tbody>
+				
+				<tfoot>
+					<tr>
+						<td colspan="2">
+							<input type="submit" value="회원가입" >
+							<input type="reset" value="취소" onclick="cancel()">
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</form>
+				
+	</div>
+	
+	<fieldset>
+		<legend>window객체</legend>
+		<ul>
+			<li>프로퍼티</li>
+				<ol>
+					 <li>document.</li>
+					 <li>history.</li>
+					 <li>location.</li>
+					 <li>self.</li>
+					 <li>iframe.</li>
+					 <li>screen.</li>
+					 <li>top.</li>
+					 <li>parent.</li>
+				</ol>
+
+			<li>메소드</li>
+				<ol>
+					<li>alert()</li>
+					<li>confirm()</li>
+					<li>setInterval()</li>
+					<li>clearInterval()</li>
+					<li>open()</li>
+					<li>close()</li>
+					<li>back()</li>
+					<li>prompt()</li>
+					<li>scroll()</li>
+					<li>forward()</li>
+				</ol>
+		</ul>
+	</fieldset>
+</body>
+</html>
